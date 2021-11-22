@@ -1,0 +1,20 @@
+import Layout from '../../components/Layout';
+import PostList from '../../components/PostList';
+import { krNavigationLinks } from '../../lib/navigation';
+import { getPostItems } from '../../lib/posts';
+
+export default function KrStories({ postItems }) {
+  return (
+    <Layout navigationLinks={krNavigationLinks}>
+      <PostList postItems={postItems} />
+    </Layout>
+  );
+}
+
+export async function getStaticProps() {
+  return {
+    props: {
+      postItems: getPostItems({ lang: 'kr', category: 'stories' }),
+    },
+  };
+}
