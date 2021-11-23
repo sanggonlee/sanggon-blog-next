@@ -16,7 +16,7 @@ export default function LayoutMinimized({ children, lang = 'kr' }: Props) {
       <HeaderWrapper>
         <Top>
           <HeaderTitle>
-            <Link href={lang === 'kr' ? '/' : '/en'}>Sang-gon's blog</Link>
+            <Link href={lang === 'kr' ? '/' : '/en'}>Sang-gon&apos;s blog</Link>
           </HeaderTitle>
         </Top>
         <HeaderDivider />

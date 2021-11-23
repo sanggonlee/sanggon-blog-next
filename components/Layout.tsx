@@ -48,7 +48,7 @@ export default function Layout({
       <HeaderWrapper>
         <Top>
           <HeaderTitle>
-            <Link href={lang === 'kr' ? '/' : '/en'}>Sang-gon's blog</Link>
+            <Link href={lang === 'kr' ? '/' : '/en'}>Sang-gon&apos;s blog</Link>
           </HeaderTitle>
 
           <LanguageLink>
@@ -89,13 +89,25 @@ export default function Layout({
       <Footer>
         <HeaderDivider />
         <SocialLinks>
-          <a href="https://github.com/sanggonlee" target="_blank">
+          <a
+            href="https://github.com/sanggonlee"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
           </a>
-          <a href="https://www.linkedin.com/in/sanggonlee/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/sanggonlee/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FontAwesomeIcon icon={faLinkedinIn} />
           </a>
-          <a href="https://medium.com/@sanggon" target="_blank">
+          <a
+            href="https://medium.com/@sanggon"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FontAwesomeIcon icon={faMediumM} />
           </a>
         </SocialLinks>
