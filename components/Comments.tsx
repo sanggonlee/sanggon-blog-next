@@ -9,7 +9,7 @@ export default function Comments() {
     scriptEl.setAttribute('src', 'https://utteranc.es/client.js');
     scriptEl.setAttribute('crossorigin', 'anonymous');
     scriptEl.setAttribute('async', 'true');
-    scriptEl.setAttribute('repo', 'sanggonlee/sanggon-blog.next');
+    scriptEl.setAttribute('repo', 'sanggonlee/sanggon-blog-next');
     scriptEl.setAttribute('issue-term', 'url'); // you can change 'url' with other options
     ref.current.appendChild(scriptEl);
   }, []);
