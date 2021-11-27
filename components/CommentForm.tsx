@@ -1,17 +1,17 @@
 const STATICMAN_COMMENTS_URL =
   'https://sanggon-blog-next-comments.herokuapp.com';
 
-export default function Comments() {
+type Props = {
+  pageSlug: string;
+};
+
+export default function CommentForm({ pageSlug }: Props) {
   return (
     <form
       method="POST"
       action={`${STATICMAN_COMMENTS_URL}/v3/entry/github/sanggonlee/sanggon-blog-next/main/comments`}
     >
-      <input
-        name="options[redirect]"
-        type="hidden"
-        value="https://my-site.com"
-      />
+      <input name="options[slug]" type="hidden" value={pageSlug} />
 
       <label>
         <input name="fields[name]" type="text" />

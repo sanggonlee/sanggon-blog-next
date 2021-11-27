@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 import { MDXRemote } from 'next-mdx-remote';
-import Comments from './Comments';
+import CommentForm from './CommentForm';
+import CommentsList from './CommentsList';
 import StarRating from './StarRating';
 
-export default function KrPost({ postData }) {
-  const { content } = postData;
+export default function Post({ postData, comments }) {
+  const { content, slug } = postData;
   return (
     <Wrapper>
       <Title>{postData.title}</Title>
@@ -12,7 +13,8 @@ export default function KrPost({ postData }) {
       <Content>
         <MDXRemote {...content} components={{ StarRating }}></MDXRemote>
       </Content>
-      <Comments />
+      <CommentForm pageSlug={slug} />
+      <CommentsList comments={comments} />
     </Wrapper>
   );
 }

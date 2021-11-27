@@ -1,11 +1,18 @@
 import LayoutMinimized from '../../components/LayoutMinimized';
 import Post from '../../components/Post';
-import { getAllPostIds, getPostData } from '../../lib/posts';
+import { getComments, PostComment } from '../../lib/comments';
+import { getAllPostIds, getPostData, PostData } from '../../lib/posts';
 
-export default function KrPost({ postData }) {
+type Props = {
+  postData: PostData;
+  comments: PostComment[];
+};
+
+export default function KrPost({ postData, comments }: Props) {
+  console.log({ comments });
   return (
     <LayoutMinimized>
-      <Post postData={postData} />
+      <Post postData={postData} comments={comments} />
     </LayoutMinimized>
   );
 }
@@ -20,9 +27,11 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.slug, { lang: 'kr' });
+  const comments = getComments(postData.slug);
   return {
     props: {
       postData,
+      comments,
     },
   };
 }
