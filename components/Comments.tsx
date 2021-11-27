@@ -1,22 +1,31 @@
-import { useEffect, useRef } from 'react';
+const STATICMAN_COMMENTS_URL =
+  'https://sanggon-blog-next-comments.herokuapp.com';
 
 export default function Comments() {
-  const ref = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    let scriptEl = document.createElement('script');
-    scriptEl.setAttribute('theme', 'github-light');
-    scriptEl.setAttribute('src', 'https://utteranc.es/client.js');
-    scriptEl.setAttribute('crossorigin', 'anonymous');
-    scriptEl.setAttribute('async', 'true');
-    scriptEl.setAttribute('repo', 'sanggonlee/sanggon-blog-next');
-    scriptEl.setAttribute('issue-term', 'url'); // you can change 'url' with other options
-    ref.current.appendChild(scriptEl);
-  }, []);
-
   return (
-    <div style={{ width: '100%' }} id="comments">
-      <div ref={ref} />
-    </div>
+    <form
+      method="POST"
+      action={`${STATICMAN_COMMENTS_URL}/v3/entry/github/sanggonlee/sanggon-blog-next/main/comments`}
+    >
+      <input
+        name="options[redirect]"
+        type="hidden"
+        value="https://my-site.com"
+      />
+
+      <label>
+        <input name="fields[name]" type="text" />
+        Name
+      </label>
+      <label>
+        <input name="fields[email]" type="email" />
+        E-mail
+      </label>
+      <label>
+        <textarea name="fields[message]"></textarea>Message
+      </label>
+
+      <button type="submit">Go!</button>
+    </form>
   );
 }
