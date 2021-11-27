@@ -5,7 +5,7 @@ import { getAllPostIds, getPostData } from '../../lib/posts';
 export default function EnPost({ postData }) {
   return (
     <LayoutMinimized lang="en">
-      <Post postData={postData} />
+      <Post postData={postData} comments={[]} />
     </LayoutMinimized>
   );
 }
