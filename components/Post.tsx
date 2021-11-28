@@ -3,6 +3,7 @@ import { MDXRemote } from 'next-mdx-remote';
 import CommentForm from './CommentForm';
 import CommentsList from './CommentsList';
 import StarRating from './StarRating';
+import { COLORS } from '../lib/styles';
 
 export default function Post({ postData, comments }) {
   const { content, slug } = postData;
@@ -13,6 +14,7 @@ export default function Post({ postData, comments }) {
       <Content>
         <MDXRemote {...content} components={{ StarRating }}></MDXRemote>
       </Content>
+      <Divider />
       <CommentForm pageSlug={slug} />
       <CommentsList comments={comments} />
     </Wrapper>
@@ -31,4 +33,10 @@ const Date = styled.p`
 
 const Content = styled.div`
   padding: 2rem 0;
+`;
+
+const Divider = styled.div`
+  width: 100%;
+  margin-top: 1.5rem;
+  border-top: 0.2rem solid ${COLORS.primary};
 `;

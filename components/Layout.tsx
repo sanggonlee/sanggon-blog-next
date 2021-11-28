@@ -81,13 +81,13 @@ export default function Layout({
             );
           })}
         </LinksWrapper>
-        <HeaderDivider />
+        <Divider />
       </HeaderWrapper>
       <MainWrapper>
         <ChildWrapper>{children}</ChildWrapper>
       </MainWrapper>
       <Footer>
-        <HeaderDivider />
+        <Divider />
         <SocialLinks>
           <a
             href="https://github.com/sanggonlee"
@@ -175,7 +175,7 @@ const HighlightIndicator = styled.sup`
   margin-left: 0.2rem;
 `;
 
-const HeaderDivider = styled.div`
+const Divider = styled.div`
   width: 100%;
   margin-top: 1.5rem;
   border-top: 0.2rem solid ${COLORS.primary};
