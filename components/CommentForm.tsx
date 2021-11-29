@@ -40,7 +40,6 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   color: ${COLORS.primary};
-  font-weight: bold;
   padding: 1rem 0;
 `;
 
@@ -51,6 +50,7 @@ const Field = styled.label`
   & > span {
     display: inline-block;
     flex: 0 0 12rem;
+    font-weight: bold;
   }
 
   & > input {

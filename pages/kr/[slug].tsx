@@ -9,7 +9,6 @@ type Props = {
 };
 
 export default function KrPost({ postData, comments }: Props) {
-  console.log({ comments });
   return (
     <LayoutMinimized>
       <Post postData={postData} comments={comments} />

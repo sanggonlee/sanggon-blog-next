@@ -67,7 +67,7 @@ const ItemWrapper = styled.div`
 const Title = styled.h3``;
 
 const Date = styled.div`
-  color: grey;
+  color: darkgrey;
 `;
 
 const Tags = styled.div`

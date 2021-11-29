@@ -38,5 +38,5 @@ const Content = styled.div`
 const Divider = styled.div`
   width: 100%;
   margin-top: 1.5rem;
-  border-top: 0.2rem solid ${COLORS.primary};
+  border-top: 0.1rem solid ${COLORS.primary};
 `;
