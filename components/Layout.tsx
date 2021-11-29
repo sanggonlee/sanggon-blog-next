@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import {
@@ -9,8 +8,9 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { faCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Head from './Head';
 import { NavigationLink } from '../lib/navigation';
-import { COLORS } from '../lib/styles';
+import { COLORS, WIDTH } from '../lib/styles';
 import { Language } from '../lib/types';
 
 export const siteTitle = `Sang-gon's blog`;
@@ -29,22 +29,7 @@ export default function Layout({
   const router = useRouter();
   return (
     <Wrapper>
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-        <title>{siteTitle}</title>
-        <meta
-          name="description"
-          content="Sang-gon's blog on software development articles, short stories, thoughts, etc"
-        />
-        <meta
-          property="og:image"
-          content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle,
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
-        <meta name="og:title" content={siteTitle} />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
+      <Head />
       <HeaderWrapper>
         <Top>
           <HeaderTitle>
@@ -120,6 +105,10 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   height: 100vh;
+
+  @media (max-width: ${WIDTH.mobile}px) {
+    height: inherit;
+  }
 `;
 
 const HeaderWrapper = styled.header`
@@ -128,11 +117,19 @@ const HeaderWrapper = styled.header`
   padding: 2rem;
   padding-left: 4rem;
   font-family: Sans-serif;
+
+  @media (max-width: ${WIDTH.mobile}px) {
+    padding: 0.5rem;
+  }
 `;
 
 const Top = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: ${WIDTH.mobile}px) {
+    flex-direction: column;
+  }
 `;
 
 const HeaderTitle = styled.h1`
@@ -140,6 +137,11 @@ const HeaderTitle = styled.h1`
   font-weight: normal;
   padding-bottom: 1rem;
   padding-left: 2rem;
+
+  @media (max-width: ${WIDTH.mobile}px) {
+    font-size: 2rem;
+    text-align: center;
+  }
 `;
 
 const LanguageLink = styled.div`
@@ -158,6 +160,20 @@ const LinksWrapper = styled.div`
 
     &:not(:first-child) {
       padding-left: 2rem;
+    }
+  }
+
+  @media (max-width: ${WIDTH.mobile}px) {
+    & > * {
+      display: block;
+      padding: 0.5rem;
+      padding-left: 0;
+      padding-right: 0;
+      text-align: center;
+
+      &:not(:first-child) {
+        padding-left: 0;
+      }
     }
   }
 `;
@@ -187,6 +203,10 @@ const MainWrapper = styled.main`
   padding: 0 4rem;
   padding-bottom: 3rem;
   overflow-y: scroll;
+
+  @media (max-width: ${WIDTH.mobile}px) {
+    padding: 0;
+  }
 `;
 
 const ChildWrapper = styled.div`
@@ -196,6 +216,10 @@ const ChildWrapper = styled.div`
 const Footer = styled.footer`
   bottom: 0;
   padding: 0 2rem 2rem 4rem;
+
+  @media (max-width: ${WIDTH.mobile}px) {
+    padding: 0 0.5rem 1rem 0.5rem;
+  }
 `;
 
 const SocialLinks = styled.div`
@@ -213,5 +237,9 @@ const SocialLinks = styled.div`
     &:hover {
       color: deeppink;
     }
+  }
+
+  @media (max-width: ${WIDTH.mobile}px) {
+    justify-content: center;
   }
 `;

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 import Head from './Head';
-import { COLORS } from '../lib/styles';
+import { COLORS, WIDTH } from '../lib/styles';
 import { Language } from '../lib/types';
 
 type Props = {
@@ -32,6 +32,10 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   height: 100vh;
+
+  @media (max-width: ${WIDTH.mobile}px) {
+    height: inherit;
+  }
 `;
 
 const HeaderWrapper = styled.header`
@@ -40,11 +44,19 @@ const HeaderWrapper = styled.header`
   padding: 2rem;
   padding-left: 4rem;
   font-family: Sans-serif;
+
+  @media (max-width: ${WIDTH.mobile}px) {
+    padding: 0.5rem;
+  }
 `;
 
 const Top = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: ${WIDTH.mobile}px) {
+    justify-content: center;
+  }
 `;
 
 const HeaderTitle = styled.h1`
@@ -52,6 +64,12 @@ const HeaderTitle = styled.h1`
   font-weight: normal;
   padding-bottom: 1rem;
   padding-left: 2rem;
+
+  @media (max-width: ${WIDTH.mobile}px) {
+    font-size: 2rem;
+    text-align: center;
+    padding-left: 0;
+  }
 `;
 
 const HeaderDivider = styled.div`
@@ -66,6 +84,10 @@ const MainWrapper = styled.main`
   padding: 0 4rem;
   padding-bottom: 3rem;
   overflow-y: scroll;
+
+  @media (max-width: ${WIDTH.mobile}px) {
+    padding: 0;
+  }
 `;
 
 const ChildWrapper = styled.div`

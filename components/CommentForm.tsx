@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { COLORS } from '../lib/styles';
+import { COLORS, WIDTH } from '../lib/styles';
 
 const STATICMAN_COMMENTS_URL =
   'https://sanggon-blog-next-comments.herokuapp.com';
@@ -55,6 +55,14 @@ const Field = styled.label`
 
   & > input {
     flex: 1;
+  }
+
+  @media (max-width: ${WIDTH.mobile}px) {
+    flex-direction: column;
+
+    & > span {
+      flex: 0;
+    }
   }
 `;
 
