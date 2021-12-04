@@ -38,7 +38,7 @@ export default function Layout({
 
           <LanguageLink>
             {lang === 'kr' ? (
-              <Link href="/en">English Blog</Link>
+              <Link href="/en">Go to English Blog -&gt;</Link>
             ) : (
               <Link href="/">한글 블로그</Link>
             )}
@@ -156,6 +156,7 @@ const LinksWrapper = styled.div`
   padding-left: 2rem;
 
   & > * {
+    padding: 0.5rem;
     padding-right: 2rem;
 
     &:not(:first-child) {
@@ -165,7 +166,8 @@ const LinksWrapper = styled.div`
 
   @media (max-width: ${WIDTH.mobile}px) {
     & > * {
-      display: block;
+      display: inline-block;
+      min-width: 6rem;
       padding: 0.5rem;
       padding-left: 0;
       padding-right: 0;
@@ -185,7 +187,7 @@ const LinkWrapper = styled.span`
 
 const HighlightIndicator = styled.sup`
   position: absolute;
-  top: -0.5rem;
+  top: -0.2rem;
   width: 0.5rem;
   color: deeppink;
   margin-left: 0.2rem;
