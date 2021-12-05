@@ -4,6 +4,14 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: 'Dune (2021)',
+    date: '2021.11',
+    poster:
+      'https://m.media-amazon.com/images/M/MV5BN2FjNmEyNWMtYzM0ZS00NjIyLTg5YzYtYThlMGVjNzE1OGViXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg',
+    rating: 3.5,
+    text: `일단 스케일과 배경을 퀄리티 있게 구현해냈다는 점이 큰 매력으로 다가왔다. 연춛도 좋았고 재미도 있었지만 이상하게 크게 여운이 남지는 않았다.`,
+  },
+  {
     title: 'The Pursuit of Happyness (2006)',
     date: '2021.09',
     poster:
