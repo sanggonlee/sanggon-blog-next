@@ -4,6 +4,14 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: 'Spider-Man: No Way Home (2021)',
+    date: '2021.12',
+    poster:
+      'https://terrigen-cdn-dev.marvel.com/content/prod/1x/spider-mannowayhome_lob_crd_03.jpg',
+    rating: 3,
+    text: `한마디로 레퍼런스로 떡칠을 한 영화. 스파이더맨 팬들에겐 최고의 영화겠지만 그와 동시에 팬서비스 이상의 것은 거의 없는 영화. 레퍼런스 나올때마다 팬들이 호들갑 떠는거 꼴뵈기 싫어서 심술났던 영화.`,
+  },
+  {
     title: 'Dune (2021)',
     date: '2021.11',
     poster:
