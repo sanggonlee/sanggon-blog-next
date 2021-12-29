@@ -4,12 +4,20 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: '남한산성 (2017)',
+    date: '2021.12',
+    poster:
+      'https://upload.wikimedia.org/wikipedia/ko/0/0b/%EB%82%A8%ED%95%9C%EC%82%B0%EC%84%B1_%ED%8F%AC%EC%8A%A4%ED%84%B0.jpg',
+    rating: 3.5,
+    text: `그런대로 재밌게 봤다. 조금 전형적인 사극의 느낌이 있긴 했지만 무능하고 이기적인 지배층과 충신의 대립 뿐만 아니라 충신과 충신의 대립이 주를 이루었다는 점에서는 조금 새로웠다.`,
+  },
+  {
     title: 'Spider-Man: No Way Home (2021)',
     date: '2021.12',
     poster:
       'https://terrigen-cdn-dev.marvel.com/content/prod/1x/spider-mannowayhome_lob_crd_03.jpg',
     rating: 3,
-    text: `한마디로 레퍼런스로 떡칠을 한 영화. 스파이더맨 팬들에겐 최고의 영화겠지만 그와 동시에 팬서비스 이상의 것은 거의 없는 영화. 레퍼런스 나올때마다 팬들이 호들갑 떠는거 꼴뵈기 싫어서 심술났던 영화.`,
+    text: `한마디로 레퍼런스로 떡칠을 한 영화. 스파이더맨 팬들에겐 최고의 영화겠지만 그와 동시에 팬서비스 이상의 것은 거의 없는 영화. 레퍼런스 나올때마다 팬들이 호들갑 떠는거 꼴뵈기 싫어서 이러는건 아님.`,
   },
   {
     title: 'Dune (2021)',
