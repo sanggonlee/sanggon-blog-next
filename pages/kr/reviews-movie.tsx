@@ -4,6 +4,14 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: 'The Summit of the Gods (2021)',
+    date: '2022.01',
+    poster:
+      'https://pics.filmaffinity.com/le_sommet_des_dieux-229611884-large.jpg',
+    rating: 4.0,
+    text: `산을 오르는 사람들의 이야기는 언제나 경외감을 불러일으킨다. 홀로 산을 오르는 등반가와 그를 찍으려는 사진가의 이야기는 새로우면서도 극적이지만 동시에 시리도록 사실적이다. "한번 경험하고 나면, 세상의 다른 어떤것도 의미를 잃어버려" 라고 하는 하부의 말은 현실세계에 사는 우리들이 산악인이라는 다른 세계에 있는것 같은 사람들의 끄트머리라도 이해하게 해주는 말이 아니었을까 싶다.`,
+  },
+  {
     title: '남한산성 (2017)',
     date: '2021.12',
     poster:
@@ -17,7 +25,7 @@ const reviews = [
     poster:
       'https://terrigen-cdn-dev.marvel.com/content/prod/1x/spider-mannowayhome_lob_crd_03.jpg',
     rating: 3,
-    text: `한마디로 레퍼런스로 떡칠을 한 영화. 스파이더맨 팬들에겐 최고의 영화겠지만 그와 동시에 팬서비스 이상의 것은 거의 없는 영화. 레퍼런스 나올때마다 팬들이 호들갑 떠는거 꼴뵈기 싫어서 이러는건 아님.`,
+    text: `한마디로 레퍼런스로 떡칠을 한 영화. 스파이더맨 팬들에겐 최고의 영화겠지만 그와 동시에 팬서비스 이상의 것은 거의 없는 영화. 레퍼런스 나올때마다 팬들이 호들갑 떠는거 꼴보기 싫어서 이러는건 아님.`,
   },
   {
     title: 'Dune (2021)',
@@ -47,7 +55,7 @@ const reviews = [
     title: '제8일의 밤 (2021)',
     date: '2021.09',
     poster:
-      'https://t1.daumcdn.net/movie/8606d47d1447d6c8f77e9dfe91aba7ce53c09488',
+      'https://upload.wikimedia.org/wikipedia/en/2/28/The_8th_Night_poster.jpg',
     rating: 3,
     text: `설정도 정교하지 않고 연출도, 플롯도 평타정도만 치는 수준. 완성도가 높은 영화라고 할수는 없지만 오컬트 영화를 좋아하는지라 나름 재밌게 봤다.`,
   },
@@ -55,9 +63,9 @@ const reviews = [
     title: '모가디슈 (Escape from Mogadishu) (2021)',
     date: '2021.08',
     poster:
-      'https://upload.wikimedia.org/wikipedia/en/thumb/7/74/Shang-Chi_and_the_Legend_of_the_Ten_Rings_poster.jpeg/220px-Shang-Chi_and_the_Legend_of_the_Ten_Rings_poster.jpeg',
+      'https://t1.daumcdn.net/movie/8606d47d1447d6c8f77e9dfe91aba7ce53c09488',
     rating: 3.5,
-    text: `      재밌게 봤다. 소재도 좋았고 현장감을 정말 잘 살린점이 인상적이다. 남북분단을 소재로 활용한 것은 조금 식상한 면이 있었지만 감정선을 과하지 않게 처리한 점이 마음에 들었다.`,
+    text: `재밌게 봤다. 소재도 좋았고 현장감을 정말 잘 살린점이 인상적이다. 남북분단을 소재로 활용한 것은 조금 식상한 면이 있었지만 감정선을 과하지 않게 처리한 점이 마음에 들었다.`,
   },
   {
     title: '셔터 (Shutter) (2004)',
@@ -73,7 +81,7 @@ const reviews = [
     poster:
       'https://images.fathomevents.com/image/upload/w_360,dpr_1.5/fl_attachment/v1617643589/Events/2021/1513/Silence_ofthe_Lambs_1000x1480_Fathom_Website.jpg.jpg',
     rating: 3.5,
-    text: `      재밌게 봄. 매력적인 악역이라는 것의 전형을 보여준 영화. 꽤 오래전 나온 영화지만 몰입도는 최고다. 이 영화를 따라해서 지금은 클리셰가 되버린 것들도 보였다.`,
+    text: `재밌게 봄. 매력적인 악역이라는 것의 전형을 보여준 영화. 꽤 오래전 나온 영화지만 몰입도는 최고다. 이 영화를 따라해서 지금은 클리셰가 되버린 것들도 보였다.`,
   },
   {
     title: 'Black Widow (2021)',
