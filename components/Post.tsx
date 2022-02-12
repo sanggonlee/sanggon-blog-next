@@ -22,6 +22,7 @@ export default function Post({ postData, comments }) {
 }
 
 const Wrapper = styled.div`
+  max-width: 50rem;
   padding: 0 1rem;
 `;
 
