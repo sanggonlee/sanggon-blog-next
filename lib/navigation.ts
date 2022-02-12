@@ -14,5 +14,6 @@ export const krNavigationLinks: NavigationLink[] = [
 
 export const enNavigationLinks: NavigationLink[] = [
   { label: 'Tech', href: '/en/tech' },
+  { label: 'News', href: '/en/news' },
   { label: 'Others', href: '/en/others' },
 ];
