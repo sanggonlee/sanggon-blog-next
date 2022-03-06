@@ -124,7 +124,7 @@ const reviews = [
   },
   {
     title: 'Arrival (2016)',
-    date: '2016.11,2021.06',
+    date: '2021.06,2016.11',
     poster:
       'https://m.media-amazon.com/images/M/MV5BMTExMzU0ODcxNDheQTJeQWpwZ15BbWU4MDE1OTI4MzAy._V1_.jpg',
     rating: 5,
