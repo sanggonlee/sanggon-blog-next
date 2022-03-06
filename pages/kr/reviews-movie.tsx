@@ -4,6 +4,22 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: '밀양 (2007)',
+    date: '2022.03',
+    poster:
+      'https://upload.wikimedia.org/wikipedia/ko/7/79/%EB%B0%80%EC%96%91_%ED%8F%AC%EC%8A%A4%ED%84%B0.jpg',
+    rating: 4.0,
+    text: `이런 영화인줄 몰랐다. 전도연의 신들린 연기, 마치 고향인 포항이나 구룡포를 떠올리게 하는 한국의 시골마을 연출도 좋았지만 가장 강렬했던 것은 너무나도 인간적인 한 사람에 대한 심리묘사였다.`,
+  },
+  {
+    title: '원더풀 라이프 (1998)',
+    date: '2022.02',
+    poster:
+      'http://t1.daumcdn.net/movie/9880acedb2d58f87e4c3620746a4dc5af37529e7',
+    rating: 4.0,
+    text: `창문으로 들어오는 따뜻한 햇살을 배경으로 인터뷰를 하는듯한 씬들이 너무 좋았다. "당신의 인생에서 가장 행복했던 단 하나의 순간만을 골라야 한다면 무엇입니까?" 난 쉽게 정하지 못할것 같다.`,
+  },
+  {
     title: 'The Summit of the Gods (2021)',
     date: '2022.01',
     poster:
