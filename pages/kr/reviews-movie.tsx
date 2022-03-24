@@ -4,6 +4,14 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: '완벽한 타인 (2007)',
+    date: '2022.03',
+    poster:
+      'https://ww.namu.la/s/3818a261819d3b6ca3be1026449f9e0318cea12ce510d17babbd09e81474a3815036d2fbc5058bc5b0f524e169db64f9aaf7a50216137371c24eeff3e9a9b141c4d281db67219f7051046799db1c184e1a782f8b7e2162922b6ff9abc1269e99',
+    rating: 3.0,
+    text: `소재만으로도 꽤 기대를 했던 작품이었는데 그런대로 재밌게 봤다. 씁쓸하면서도 빵터질만큼 웃긴것을 이번에 처음 경험했다. 플롯도 억지스러운 부분이 있고 구성도 매끄럽지 못하다는 느낌이어서 잘 만든 영화라고는 생각되지 않았다. 이서진 연기가 생각보다 좋아서 놀랐다.`,
+  },
+  {
     title: '밀양 (2007)',
     date: '2022.03',
     poster:
