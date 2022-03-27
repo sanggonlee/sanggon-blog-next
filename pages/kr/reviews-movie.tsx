@@ -4,7 +4,17 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
-    title: '완벽한 타인 (2007)',
+    title: '랑종 (2021)',
+    date: '2022.03',
+    poster:
+      'https://w.namu.la/s/2df291471786eddab777fc94d47fe4dcb6aea61b1a9004bc3298936f43e701be09bd688c61a0d38a3a177f3c15b21a560725b6b33bb5232409a38d0b9de5f33acebd880a0976aae96d44848c81893f5ecba1656081577344f07f4f95168db19e',
+    rating: 3.5,
+    text: `돈을 내고 보려고 해도 어디서도 볼 방법이 없어서 못보고 있었는데 드디어 이번에 볼수 있었다. 
+      초중반 무서운 장면이 전혀 없는데 페이크 다큐 형식으로 실제 무당, 신내림을 취재하는 듯한 연출 덕분에 흥미진진하게 볼수 있었다. 
+      제일 무서웠던 부분은 단연 설치해놓은 카메라 영상이었지만 많이 무섭지는 않았다. 재밌게 봤다.`,
+  },
+  {
+    title: '완벽한 타인 (2018)',
     date: '2022.03',
     poster:
       'https://ww.namu.la/s/3818a261819d3b6ca3be1026449f9e0318cea12ce510d17babbd09e81474a3815036d2fbc5058bc5b0f524e169db64f9aaf7a50216137371c24eeff3e9a9b141c4d281db67219f7051046799db1c184e1a782f8b7e2162922b6ff9abc1269e99',
