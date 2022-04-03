@@ -4,6 +4,13 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: 'Bokko Toast & Dalgona Latte (JJIN Toast)',
+    location: '792 Bathurst St, Toronto, ON',
+    rating: 4,
+    text: `기대했던 맛이었고 그래서 맛있었다. 옆구리가 자꾸 터지는거랑 토스트 치고 좀 비싸다는 점만 빼면.. 캐나다에서 먹을수 있다는것만으로도 감사감사. 달고나 라떼는 생각보다 안달아서 좋았음.
+      집근처에 있었으면 자주 사먹었을듯.`,
+  },
+  {
     title: 'Hamachi Nabe (You Don Ya)',
     location: '108 Dundas St W, Toronto, ON',
     rating: 3.5,
