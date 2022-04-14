@@ -4,6 +4,18 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: '젊은이의 양지 (2019)',
+    date: '2022.04',
+    poster:
+      'https://m.media-amazon.com/images/M/MV5BNzUyNWVhMWYtYWYxYy00YWUzLWE3ZjEtYTBhMzU0ZWIzZTMyXkEyXkFqcGdeQXVyNzA3ODUyNzY@._V1_.jpg',
+    rating: 4,
+    text: `
+      어디서부터 잘못된 것일까. 혹은 누구의 잘못일까. 영화에서 비극을 초래하는 모든 사람들이 또한 비극의 희생자다. 몇번 울었다.
+      처음으로 감독과의 대화 행사에서 본 영화. 감독과의 질답에서 감독이 직접 말한대로 영화 제목 "젊은이의 양지"는 역설적이다. 이 영화에서 젊은이의 양지는 없기 때문이다.
+      영화의 상황과 배경이 너무 과장된것이 아닐까 생각이 들었지만 행사 관객중에 이런 콜센터에서 일했던 사람이 있었고 전혀 과장이 아니라고 증언해주었다.
+    `,
+  },
+  {
     title: '랑종 (2021)',
     date: '2022.03',
     poster:
