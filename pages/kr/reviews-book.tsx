@@ -4,6 +4,19 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: 'The Fault In Our Stars',
+    author: 'John Green',
+    date: '2022.04',
+    rating: 4,
+    text: `
+      폐암 말기로 한번 거의 죽었다가 기적적으로 살아나고 Cancer Support Group에 참가하는 16살 헤이젤 그레이스 랭캐스터의 주위에는 죽음이 가득하다.
+      그래서 헤이젤이 삶과 암, 죽음을 바라보는 태도는 그런 상황에 놓여본적 없는 내가 읽기에는 당황스러울 정도로 담담하다. 어거스터스 워터스와의
+      사랑, 그리고 An Emperial Affliction이라는 소설 뒤의 내용이 알고싶어 떠나는 암스테르담으로의 여행은 발랄하면서도 절절하다.
+      너무 재밌게 읽었다. 전체적으로 로맨스소설의 형태를 띄고 있지만 살 날이 얼마 남지 않은 10대들의 생각과 곳곳에서 보이는 작가의 통찰은 절대 가볍지 않다.
+      문장들도 쉽게쉽게 읽힌다. 앞으로 존 그린이라는 작가를 꽤 좋아하게 될 것 같다.
+    `,
+  },
+  {
     title: '불교가 필요하다',
     author: '김규칠',
     date: '2022.03',
