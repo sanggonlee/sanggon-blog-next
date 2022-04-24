@@ -4,6 +4,12 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: 'Steak Tartare (Union)',
+    location: '72 Ossington Ave, Toronto, ON',
+    rating: 3.5,
+    text: `이렇게 괜찮은데가 집근처에 있었다니. 타르타르보다 빵이 특히 맛있었다. 매일 재료가 신선한지에 따라 메뉴가 바뀐다고 하는데 웬만하면 크게 바뀌진 않는듯.`,
+  },
+  {
     title: 'Bokko Toast & Dalgona Latte (JJIN Toast)',
     location: '792 Bathurst St, Toronto, ON',
     rating: 4,
