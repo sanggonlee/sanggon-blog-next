@@ -3,6 +3,17 @@ import ReviewList from '../../components/ReviewList';
 import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
+
+  {
+    title: 'Source Code (2011)',
+    date: '2022.04',
+    poster:
+      'https://upload.wikimedia.org/wikipedia/en/e/e5/Source_Code_Poster.jpg',
+    rating: 3.5,
+    text: `
+      재밌게 봄. 미국스러운 영화다 라는 느낌이 많이 들었음.
+    `,
+  },
   {
     title: '젊은이의 양지 (2019)',
     date: '2022.04',
