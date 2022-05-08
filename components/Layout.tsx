@@ -67,11 +67,13 @@ export default function Layout({
           })}
         </LinksWrapper>
         <Divider />
+        <TopFader></TopFader>
       </HeaderWrapper>
       <MainWrapper>
         <ChildWrapper>{children}</ChildWrapper>
       </MainWrapper>
       <Footer>
+        <BottomFader></BottomFader>
         <Divider />
         <SocialLinks>
           <a
@@ -112,9 +114,10 @@ const Wrapper = styled.div`
 `;
 
 const HeaderWrapper = styled.header`
+  position: relative;
   flex: 0 0;
   color: ${COLORS.primary};
-  padding: 2rem;
+  padding: 2rem 2rem 0 2rem;
   padding-left: 4rem;
   font-family: Sans-serif;
 
@@ -199,11 +202,11 @@ const Divider = styled.div`
   border-top: 0.2rem solid ${COLORS.primary};
 `;
 
-const MainWrapper = styled.main`
+const MainWrapper = styled.div`
+  position: relative;
   display: flex;
   flex: 1;
   padding: 0 4rem;
-  padding-bottom: 3rem;
   overflow-y: scroll;
 
   @media (max-width: ${WIDTH.mobile}px) {
@@ -211,11 +214,38 @@ const MainWrapper = styled.main`
   }
 `;
 
+const TopFader = styled.div`
+  position: absolute;
+  bottom: -4rem;
+  width: 100%;
+  height: 4rem;
+  background-image: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1)
+  );
+  z-index: 10;
+`;
+
+const BottomFader = styled.div`
+  position: absolute;
+  top: -4rem;
+  width: 100%;
+  height: 4rem;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1)
+  );
+  z-index: 10;
+`;
+
 const ChildWrapper = styled.div`
   flex: 1;
 `;
 
 const Footer = styled.footer`
+  position: relative;
   bottom: 0;
   padding: 0 2rem 2rem 4rem;
 
