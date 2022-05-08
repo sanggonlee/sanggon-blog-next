@@ -4,6 +4,13 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: 'P.E.I Lobster Mac and Cheese & Maine XL Oyster (Oyster Boy)',
+    location: '872 Queen St W, Toronto, ON M6J 1G3',
+    rating: 3.5,
+    text: `굴은 달랑 하나를 시켰는데 그래도 3가지 소스 (레몬, 칵테일, 바나나페퍼)를 다 줬다. 그릇도 얼핏보면 무슨 20개정도 올려져있는줄 알거같은 플레이팅. 정말 크긴 했다. 맛있었음.
+      맥앤치즈는 웨이트리스가 자기는 바나나페퍼를 얹어서 먹는걸 좋아한다고 해서 그렇게 먹어봤는데 진짜 느끼함도 덜하고 괜찮았다.`,
+  },
+  {
     title: 'Steak Tartare (Union)',
     location: '72 Ossington Ave, Toronto, ON',
     rating: 3.5,
