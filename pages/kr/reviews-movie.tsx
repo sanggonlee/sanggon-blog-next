@@ -3,7 +3,16 @@ import ReviewList from '../../components/ReviewList';
 import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
-
+  {
+    title: 'Saw (2004)',
+    date: '2022.05',
+    poster:
+      'https://lionsgate.brightspotcdn.com/d6/db/61660ed04791889f139fca4ab595/saw-1-movies-he-poster-01.jpg',
+    rating: 3.5,
+    text: `
+      워낙 좋은 이야기를 많이 들어서 기대하고 봤는데 그정도는 아니었다. 반전도 중간반전은 쉽게 예상할수 있는 정도였지만 몰입도는 정말 좋았음.
+    `,
+  },
   {
     title: 'Source Code (2011)',
     date: '2022.04',
