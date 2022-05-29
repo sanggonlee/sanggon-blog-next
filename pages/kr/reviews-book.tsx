@@ -4,6 +4,18 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: `50 Children: One Ordinary American Couple's Extraordinary Rescue Mission Into the Heart of Nazi Germany`,
+    author: 'Steven Pressman',
+    date: '2022.05',
+    rating: 3,
+    text: `
+      미국에 사는 평범한 유대인 Kraus 부부가 2차 대전이 임박했을때 나치독일로 들어가 50명의 유대인 아이들을 미국으로 구출한 실화를 기자 Steven Pressman이 자료를 수집해 기록한, 기록물이다.
+      같은 회사에 Eric Beller라는 사람의 아버지 Paul Beller가 이 50명의 아이들 중 한명이고 이분을 북클럽 모임 게스트로 초청한다고 해서, 이런건 또 못참기 때문에 읽게 되었다.
+      일단 구출작전이라는 말에서 느껴지는 스펙타클함과는 거리가 좀 있었다. 더 정확하게 말하자면 미국에서 모든 적법한 절차를 거치고 오스트리아 비엔나에서 50명의 아이들을 선별해서 미국으로 이민시킨다는 내용이다.
+      기자인 작가가 사실들을 나열하는 식으로 서술되어서 특히 초중반까지는 굉장히 지루했다. 아이들이 부모들과 헤어지는 장면이라던가 Kraus부부가 나치 사무실에서 SS Officer를 대면하는 장면은 그래도 드라마가 좀 있었다.
+    `,
+  },
+  {
     title: 'The Fault In Our Stars',
     author: 'John Green',
     date: '2022.04',
