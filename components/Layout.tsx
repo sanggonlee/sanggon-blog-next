@@ -206,7 +206,7 @@ const MainWrapper = styled.div`
   position: relative;
   display: flex;
   flex: 1;
-  padding: 0 4rem;
+  padding: 2rem 4rem;
   overflow-y: scroll;
 
   @media (max-width: ${WIDTH.mobile}px) {
@@ -216,12 +216,13 @@ const MainWrapper = styled.div`
 
 const TopFader = styled.div`
   position: absolute;
-  bottom: -4rem;
+  bottom: -2rem;
   width: 100%;
-  height: 4rem;
+  height: 2rem;
   background-image: linear-gradient(
     to top,
     rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.8),
     rgba(255, 255, 255, 1)
   );
   z-index: 10;
@@ -229,12 +230,13 @@ const TopFader = styled.div`
 
 const BottomFader = styled.div`
   position: absolute;
-  top: -4rem;
+  top: -2rem;
   width: 100%;
-  height: 4rem;
+  height: 2rem;
   background-image: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.8),
     rgba(255, 255, 255, 1)
   );
   z-index: 10;
