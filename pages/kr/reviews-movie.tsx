@@ -8,7 +8,7 @@ const reviews = [
     date: '2022.06',
     poster:
       'https://m.media-amazon.com/images/M/MV5BMmIwZDMyYWUtNTU0ZS00ODJhLTg2ZmEtMTk5ZmYzODcxODYxXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_FMjpg_UX1000_.jpg',
-    rating: 4.5,
+    rating: 4,
     text: `
       정말 재밌게 봤다. 액션성이 많이 높은 영화들은 판타지성 영화들이었던지라 (미션임파서블, 007 등) 미 공군 이야기라는게 오히려 적응이 안됐달까. 플롯, 연출 등 전부 따봉이었던 영화.
     `,
