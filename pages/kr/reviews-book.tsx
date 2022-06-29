@@ -4,6 +4,17 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: `고전의 고전`,
+    author: '강대진, 김주일, 이기백, 이준석, 장시은',
+    date: '2022.06',
+    rating: 3.5,
+    text: `
+      호메로스, 헤로도토스, 플라톤, 아리스토텔레스 등이 지은 고전 중의 고전들을 간략하게 해설해주며 왜 이 고전들이 고전들인지를 설명해주는 책.
+      이 고전들중 하나만 다루어도 몇십권이 나올 작품들이라 이렇게 한 챕터씩만 할애하다보니 굉장히 맛배기 느낌이 강했다.
+      그럼에도 선생님들이 차근차근 설명해주는 느낌이어서 흥미롭게 잘 읽었다. 인문고전들에 대해 조금 배우고 싶은데 엄두가 안나는 사람들에게 추천할만한 책.
+    `,
+  },
+  {
     title: `50 Children: One Ordinary American Couple's Extraordinary Rescue Mission Into the Heart of Nazi Germany`,
     author: 'Steven Pressman',
     date: '2022.05',
