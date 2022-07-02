@@ -4,6 +4,16 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: '마녀 Part 2: The Other One',
+    date: '2022.07',
+    poster:
+      'https://dimg.donga.com/wps/NEWS/IMAGE/2022/05/16/113415337.2.jpg',
+    rating: 3.5,
+    text: `
+      재밌다. 재밌어! 서사구조, 흥행공식 등은 개나 줘버린 작품이고 유머요소도 어설프지만 그래도 재밌다. 마녀 1편을 꽤 재밌게 봤었기 때문에 나름 기대했던 작품이었는데 크게 새로운 느낌은 없었다.
+    `,
+  },
+  {
     title: 'Top Gun: Maverick (2022)',
     date: '2022.06',
     poster:
