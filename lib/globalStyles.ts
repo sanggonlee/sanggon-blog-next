@@ -108,6 +108,13 @@ const GlobalStyles = createGlobalStyle`
 
   p {
     margin-block-end: 1.5rem;
+
+    a {
+      font-weight: bold;
+      text-decoration: underline;
+      text-decoration-color: ${COLORS.primary};
+      text-underline-offset: 0.15rem;
+    }
   }
 `;
 export default GlobalStyles;
