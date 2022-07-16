@@ -4,6 +4,12 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: '치즈스틱 돈까스 (Brown Donkatsu)',
+    location: '6024 Yonge St, North York',
+    rating: 4,
+    text: `우와앙! 너무 맛있었다. 젊은 사람들 입맛에 맞춘 메뉴, 정말 반가웠음. 사장님이 20분 기다렸다고 음료수도 서비스로 주심.`,
+  },
+  {
     title: '마라탕 (Bone Soup Malatang)',
     location: '5320 Yonge St, North York',
     rating: 3.5,

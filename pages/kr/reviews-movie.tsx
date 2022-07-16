@@ -4,10 +4,19 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
-    title: '마녀 Part 2: The Other One',
+    title: 'The Dark Tower',
     date: '2022.07',
     poster:
-      'https://dimg.donga.com/wps/NEWS/IMAGE/2022/05/16/113415337.2.jpg',
+      'https://upload.wikimedia.org/wikipedia/en/4/49/The_Dark_Tower_teaser_poster.jpg',
+    rating: 2,
+    text: `
+      이게 뭘까 싶었던 영화. 다크 판타지 설정, 플롯, 액션 뭐 하나 제대로 담아낸 것이 없었다. 설정이 생소하면 전달이라도 제대로 해야하는데 그러지 못했고, 플롯은 식상 그 자체였으며 액션은 절정부분 딱 하나정도가 간신히 평타 친 수준. 
+    `,
+  },
+  {
+    title: '마녀 Part 2: The Other One',
+    date: '2022.07',
+    poster: 'https://dimg.donga.com/wps/NEWS/IMAGE/2022/05/16/113415337.2.jpg',
     rating: 3.5,
     text: `
       재밌다. 재밌어! 서사구조, 흥행공식 등은 개나 줘버린 작품이고 유머요소도 어설프지만 그래도 재밌다. 마녀 1편을 꽤 재밌게 봤었기 때문에 나름 기대했던 작품이었는데 크게 새로운 느낌은 없었다.
