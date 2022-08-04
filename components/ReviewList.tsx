@@ -43,7 +43,7 @@ function ReviewItem({
     <ReviewItemWrapper>
       {poster && (
         <Poster>
-          <img src={poster} alt={title} />
+          <img src={poster} alt={title} loading="lazy" />
         </Poster>
       )}
       <div>
