@@ -4,6 +4,12 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: 'Mabu Egged Sukiyaki w/ Rice (Mabu Generation)',
+    location: '578 Yonge St, Toronto',
+    rating: 3.5,
+    text: `대만 음식은 처음 먹어본듯 한데 메뉴들이 꽤 내 취향이었음.`,
+  },
+  {
     title: '치즈스틱 돈까스 (Brown Donkatsu)',
     location: '6024 Yonge St, North York',
     rating: 4,
