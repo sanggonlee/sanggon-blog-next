@@ -1,0 +1,95 @@
+---
+title: "You probably don't want that concurrency for speed in Go"
+date: '2022-08-13'
+category: tech
+tags: ['Development', 'Article']
+---
+
+import CaptionedImage from '../../components/CaptionedImage';
+
+
+**Disclaimer**: This post has published on [Medium](https://medium.com/nerd-for-tech/you-probably-dont-want-that-concurrency-in-go-109421e8d23) on May 25th, 2021.
+
+## Prelude
+
+I had a chance to review some tech challenges submitted for developer positions of various seniority in my company. The challenge is to write a simple command line utility program, and was in Go. I won't disclose the details, but it involved iterating over multiple “things” and do something with each.
+
+What surprised me was that so many applicants used concurrency for the challenge, in the effort to parallelize the works. The challenge didn't ask to optimize for the best runtime, and definitely didn't ask for parallelism (although we left most of the direction to the applicant's liberty). This made me wonder, “why is this happening?”.
+
+I was soon able to reach the conclusion — **because concurrency in Go is so easy**.
+
+If the challenge were in Python, would they have used `multiprocessing` or `asyncio` libraries? If it were in Java, would they have used `ExecutorService`? I'm no expert on those languages, but I doubt that.
+
+From the psychological perspective, I could actually understand them. Concurrency is a relatively advanced concept, even in Go, and we better express our knowledge in a tech challenge, right? :) I have also been on that side in the past, and I was also thrilled to have learned such elegance in Go. Unfortunately, it did the opposite of impressing me in this case.
+
+## Real deal
+
+Okay, so what's the deal then? What's wrong with using concurrency, and am I saying you should never use it?
+
+When I think of concurrency there are two major reasons people might want to use it:
+
+Things that can't be done sequentially or are more complex that way
+Runtime performance
+We will talk about the second one here.
+
+The thing is, concurrent program introduces much more complexity than its sequential counterpart. And in a lot of times, **a slight boost in performance is not worth the readability it was traded for**.
+
+Concurrent program also comes with the risk of deadlocks, less flexibility, and other concurrency bugs. Overall, it impacts maintainability quite a bit.
+
+But what if you still want to do it?
+
+## Will it actually be faster?
+
+Recently I had a chance to look at the source code of [io.MultiWriter](https://golang.org/pkg/io/#MultiWriter).
+
+It can be used for writing the same data to multiple IO destinations. For example, while working on [plum](https://github.com/sanggonlee/plum) I needed to write a JSON stream to three destinations: WebSocket connection, a file, and STDOUT (for logging).
+
+You might be surprised to see how simple the source code of io.MultiWriter's `Write` method is:
+
+<CaptionedImage
+  src="https://miro.medium.com/max/583/1*fpt0B3bUX9btKyhw4J_3TQ.png"
+  caption={{
+    imgSource: "https://golang.org/src/io/multi.go?#L58"
+  }}
+/>
+
+<br/>
+
+It simply iterates over the multiple writers and calls their Write methods.
+
+But oh no! It's SEQUENTIAL! Shouldn't we run them in parallel to squeeze as much performance as possible, since writing bytes can be expensive? Should you create a pull request in Go source repository to address this?
+
+No need, I created a package for that: `AsyncMultiWriter`. It is exactly same as MultiWriter, except Write on each writer is done concurrently.
+
+Here is the benchmark result between AsyncMultiWriter and MultiWriter, with 3 writers:
+
+```
+BenchmarkAsyncMultiWriter_Write_3_writers-8       596774             21188 ns/op
+BenchmarkMultiWriter_Write_3_writers-8            595705             18871 ns/op
+BenchmarkAsyncMultiWriter_Write_8_writers-8       150171             66789 ns/op
+BenchmarkMultiWriter_Write_8_writers-8            267482             63881 ns/op
+BenchmarkAsyncMultiWriter_Write_20_writers-8       76065            227821 ns/op
+BenchmarkMultiWriter_Write_20_writers-8            72504            175907 ns/op
+```
+
+For less than 8 writers, the parallel version was __slower__ than the sequential version.
+
+How can this be?
+
+- Firstly, each operation wasn't that expensive (writes about 3.6KB). If the data to write was bigger, the async version would've performed better (kudos to Benjamin Barrois for pointing this out).
+- Secondly, concurrent CPU intensive works might not perform as well as you might think. Performance gain comes from utilizing multiple cores by parallelism. But it also comes from yielding between goroutines (i.e. [coroutine](https://en.wikipedia.org/wiki/Coroutine)). In this case, each operation would be busy writing the data and has no chance to yield to other goroutines.
+- Thirdly, there is always overhead of communicating between processes — for synchronization, accessing shared resources, etc etc. This can hit especially hard for small operation sizes.
+
+The second point tells us that, you will benefit more from concurrency when you are running multiple __blocking operations__. For example, say you are sending multiple HTTP requests for expensive APIs. Running them concurrently can help here because while one process waits for the response and goes idle, it can context switch and utilize the CPU for other processes.
+
+## Takeway
+
+Here are the TLDRs:
+
+- Go with a simpler, more readable solution before resorting to concurrency.
+- If you really need to optimize for performance, always benchmark. Benchmark both the sequential and concurrent versions on various input parameters. The result can vary a lot depending on the number of items to process, and how expensive it is to process each item.
+- One good rule of thumb on when to use concurrency: will each process block (wait idly) for extended period of time?
+
+If you haven’t done so, I strongly recommend to watch [this talk](https://blog.golang.org/waza-talk) by Rob Pike. It's an amazing talk, and you will learn so much if your understanding in concurrency is not at 100%.
+
+Thank you for reading.

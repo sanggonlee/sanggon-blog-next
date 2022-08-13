@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { MDXRemote } from 'next-mdx-remote';
+import CaptionedImage from './CaptionedImage';
 import CommentForm from './CommentForm';
 import CommentsList from './CommentsList';
 import StarRating from './StarRating';
@@ -12,7 +13,7 @@ export default function Post({ postData, comments }) {
       <Title>{postData.title}</Title>
       <Date>{postData.date}</Date>
       <Content>
-        <MDXRemote {...content} components={{ StarRating }}></MDXRemote>
+        <MDXRemote {...content} components={{ CaptionedImage, StarRating }}></MDXRemote>
       </Content>
       <Divider />
       <CommentForm pageSlug={slug} />
