@@ -4,6 +4,16 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: `언어의 온도`,
+    author: '이기주',
+    date: '2022.08',
+    rating: 3.5,
+    text: `
+      이런 종류의 에세이들은 삶의 거대한 방향을 제시해 준다기보다는 살면서 중간중간 멈춰서서 돌아볼 필요가 있음을 일깨워준다.
+      따스한 언어의 온도로 마음을 따뜻하게 해주는 책.
+    `,
+  },
+  {
     title: `완전한 행복`,
     author: '정유정',
     date: '2022.07',
