@@ -4,7 +4,33 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
-    title: 'The Dark Tower',
+    title: 'R.R.R (2022)',
+    date: '2022.09',
+    poster:
+      'https://upload.wikimedia.org/wikipedia/en/thumb/d/d7/RRR_Poster.jpg/220px-RRR_Poster.jpg',
+    rating: 3,
+    text: `
+      인도의 발리우드 영화들에는 일정한 공식이 있는듯하다.
+      명확히 대비되는 선과 악. 어이없어서 웃음이 나올정도로 초인적인 주인공들. 마지막을 예외없이 장식하는 떼춤.
+      나름 재밌게 봤다. 인도의 영국에 대한 반감이 이렇게 적나라한게 표현된것은 처음 봤다.
+    `,
+  },
+  {
+    title: '옥자 (2017)',
+    date: '2022.09',
+    poster:
+      'https://upload.wikimedia.org/wikipedia/en/f/f6/Okja.png',
+    rating: 3.5,
+    text: `
+      동물보호단체와 미자가 그렇게 몸을 던져 노력했음에도 불구하고 결국 옥자를 구해내는건 황금이다.
+      그마저도 옥자 단 하나만 구해냈을뿐, 다른 수많은 수퍼돼지들은 도살장에 남음으로써 수퍼돼지 양식이 본격화될것임을 암시한다.
+      돈을 위해 수퍼돼지를 사육했고 미자는 동물보호엔 별로 관심이 없지만 옥자를 구하기 위해 그들이 하는 게임에 동참한 셈이다.
+      굴복했다는 표현이 맞는 것일지는 모르겠다.
+      결말부분엔 너무 슬펐고 그건 영화의 슈퍼돼지를 닭이나 돼지같은 일반가축으로 대입해도 변함이 없겠지만, 나는 감독이 비인도적인 동물사육보다 더 궁극적으로 자본주의에 대해 말하고 싶었다고 생각한다.
+    `,
+  },
+  {
+    title: 'The Dark Tower (2017)',
     date: '2022.07',
     poster:
       'https://upload.wikimedia.org/wikipedia/en/4/49/The_Dark_Tower_teaser_poster.jpg',
@@ -14,7 +40,7 @@ const reviews = [
     `,
   },
   {
-    title: '마녀 Part 2: The Other One',
+    title: '마녀 Part 2: The Other One (2022)',
     date: '2022.07',
     poster: 'https://dimg.donga.com/wps/NEWS/IMAGE/2022/05/16/113415337.2.jpg',
     rating: 3.5,
