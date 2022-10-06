@@ -4,6 +4,16 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: `The Brain`,
+    author: 'David Eagleman',
+    date: '2022.09',
+    rating: 3.5,
+    text: `
+      무난했던 뇌과학 입문서. 첫부분은 거의 알고 있었던 부분이었는데 둘째 챕터부터 새로 알게된 놀라운 사실들이 많았다.
+      뇌과학이라는 분야가 하루가 다르게 새로운 연구결과가 나오고 있는 학문이다 보니 몇년 안가 또 새로운 입문서가 필요하지 않을까 생각이 들긴 하지만 그래도 흥미롭게 잘 읽었다.
+    `,
+  },
+  {
     title: `2022 제13회 젊은작가상 수상작품집`,
     author: '임솔아, 김멜라, 김병운, 김지연, 김혜진, 서수진, 서이제',
     date: '2022.09',
