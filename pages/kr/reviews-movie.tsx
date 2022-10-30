@@ -4,6 +4,17 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: 'Moonfall (2022)',
+    date: '2022.10',
+    poster:
+      'https://m.media-amazon.com/images/M/MV5BMmVkMDhiYjgtNjQxMC00NzA4LWFmYTAtNTgxODc3MDQxMjk4XkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_.jpg',
+    rating: 3.5,
+    text: `
+      달이 지구에 충돌한다는 전무후무한 설정으로 지구의 물이 달의 중력에 빨려들어가는 와중에 발사되는 로켓 등의 멋지고 유니크한 장면들이 연출되었다.
+      거기에 Sci-fi 미스터리까지 끼얹어서 꽤 재밌게 봤다. 단점이라면 씬들이 너무 빨리빨리 지나가서 감정이 빌드업될 시간이 부족했다.
+    `,
+  },
+  {
     title: 'R.R.R (2022)',
     date: '2022.09',
     poster:
