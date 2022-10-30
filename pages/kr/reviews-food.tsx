@@ -4,6 +4,18 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: 'Makdous Fatteh & Sultan Power (Zezafoun Syrian Cuisine)',
+    location: '4 Manor Road E, Toronto',
+    rating: 3.5,
+    text: `처음 먹어본 시리아 음식. 오 음식의 균형도 잘맞고 맛있었다. 술탄 파워라는 음료수는 생강, black seed, 꿀을 넣은 탄산음료인데 이것도 괜찮았음.`,
+  },
+    {
+    title: 'Cantonese Chow Mein (Chi Dim Sum)',
+    location: '2425 Yonge St, Toronto',
+    rating: 3.5,
+    text: `오 이게 이렇게 맛있는 음식이었다니`,
+  },
+  {
     title: 'Mabu Egged Sukiyaki w/ Rice (Mabu Generation)',
     location: '578 Yonge St, Toronto',
     rating: 3.5,
