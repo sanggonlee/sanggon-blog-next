@@ -4,6 +4,18 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: `Stories of Your Life and Others`,
+    author: 'Ted Chiang',
+    date: '2022.11',
+    rating: 4,
+    text: `
+      벼르고 벼르던 테드 창의 단편집을 드디어 읽었다. 한마디로 굉장히 명석한 단편들이라는 생각이 들었다.
+      건축, 수학, 언어학, 생물학, 신학 등 이 단편집에서 소재로 삼는 학문 수만 해도 무려 5가지가 넘으며 심지어 그 깊이도 경이로운 수준이다.
+      또한 모든 단편들에서 꽤 심도있는 철학적 질문을 던진다.
+      그 중에서 영화 <Arrival>의 원작소설인 <Story of Your Life>와 <지옥은 신의 부재: Hell is God's Absence>는 드라마성도 굉장히 훌륭하다.
+    `,
+  },
+  {
     title: `The Brain`,
     author: 'David Eagleman',
     date: '2022.09',
