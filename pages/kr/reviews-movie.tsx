@@ -4,6 +4,16 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: 'Hellhole (2022)',
+    date: '2022.11',
+    poster:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBlYjMisjmHQ8fgMtp1S9n0AGeN19UDpcdSgPCB8bvFrJA3993vSfYPN2PW_jKndbC260&usqp=CAU',
+    rating: 3.5,
+    text: `
+      좀 기분나쁜 내용들이 있긴 했지만 후반부가 뻔하지 않아서 좋았다. 재밌게 봤다.
+    `,
+  },
+  {
     title: 'Moonfall (2022)',
     date: '2022.10',
     poster:
