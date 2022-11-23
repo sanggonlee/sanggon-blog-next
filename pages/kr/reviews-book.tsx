@@ -4,6 +4,15 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: `당신 생각하느라 꽃을 피웠을 뿐이에요`,
+    author: '나태주 (엮음)',
+    date: '2022.11',
+    rating: 3.5,
+    text: `
+      이게 얼마만에 읽은 시집인지. 대부분이 나태주 본인의 시이고 세계적으로 유명한 시들도 있다. 시집을 가까이 두고 자주 들여다보면 좋겠다는 생각이 들었다.
+    `,
+  },
+  {
     title: `아몬드`,
     author: '손원평',
     date: '2022.11',
