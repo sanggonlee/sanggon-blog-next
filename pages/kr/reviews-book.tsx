@@ -4,6 +4,16 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: `The Communist Manifesto (공산당 선언)`,
+    author: 'Karl Marx & Friedrich Engels',
+    date: '2022.11',
+    text: `
+      이걸 영어로 읽기로 한건 별로 좋은 생각이 아니었다. 인류의 역사를 바꾼 책이기도 하고 다른 책들과 묶어서 싸게 팔길래 충동구매함.
+      당시 어째서 부르주아계급이 몰락하고 프롤레타리아계급이 부상할 것인지, 그리고 공산당의 비전을 제시하며 노동자들의 단결을 부르짖는 문장으로 끝을 맺는다.
+      그나마 짧은 책이었기에 (120쪽) 도전할수 있지 않았나 싶다.
+    `,
+  },
+  {
     title: `당신 생각하느라 꽃을 피웠을 뿐이에요`,
     author: '나태주 (엮음)',
     date: '2022.11',
