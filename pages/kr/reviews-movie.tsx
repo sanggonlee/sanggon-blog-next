@@ -4,6 +4,16 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: 'Everything Everywhere All at Once (2022)',
+    date: '2022.12',
+    poster:
+      'https://upload.wikimedia.org/wikipedia/en/1/1e/Everything_Everywhere_All_at_Once.jpg',
+    rating: 4,
+    text: `
+      가볍지 않은 주제를 코미디와 기발한 설정, 액션으로 굉장히 잘 버무렸다.
+    `,
+  },
+  {
     title: 'Christmas With You (2022)',
     date: '2022.11',
     poster:
