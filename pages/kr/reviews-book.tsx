@@ -4,6 +4,16 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: `소년이 온다`,
+    author: '한강',
+    date: '2022.12',
+    rating: 4,
+    text: `
+      담담한 시선을 유지하려는 노력이 보이고 그래서 소재에 비해 온도가 낮은 소설이라는 생각이 들었다. 생각만으로도 가슴을 아릿해지게 만드는 책.
+      어쩌면 한강은 자신의 입지를 이용해 그 사건을 한번 더 기억해보자고 말하고 싶었던건 아닐까.
+    `,
+  },
+  {
     title: `The Communist Manifesto (공산당 선언)`,
     author: 'Karl Marx & Friedrich Engels',
     date: '2022.11',
