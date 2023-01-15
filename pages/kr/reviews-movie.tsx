@@ -4,6 +4,16 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: 'The Menu (2022)',
+    date: '2023.01',
+    poster:
+      'https://i.ytimg.com/vi/LpUbk70YZd8/movieposter_en.jpg',
+    rating: 3.5,
+    text: `
+      쉽사리 이해되지는 않았지만 신선함과 메세지에 점수를 주고싶다. 
+    `,
+  },
+  {
     title: 'Everything Everywhere All at Once (2022)',
     date: '2022.12',
     poster:
