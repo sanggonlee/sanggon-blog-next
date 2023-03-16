@@ -16,8 +16,6 @@ export default function Post({ postData, comments }) {
         <MDXRemote {...content} components={{ CaptionedImage, StarRating }}></MDXRemote>
       </Content>
       <Divider />
-      <CommentForm pageSlug={slug} />
-      <CommentsList comments={comments} />
     </Wrapper>
   );
 }
