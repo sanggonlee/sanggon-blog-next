@@ -4,6 +4,17 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: `Factfulness`,
+    author: 'Hans Rosling, Ola Rosling, Anna Rosling Rönnlund',
+    date: '2023.03',
+    rating: 4.5,
+    text: `
+      이 책을 읽고나서 세상을 바라보는 시선이 바뀌었고, 대부분의 다른 사람들도 그럴 것이다.
+      어째서 절대다수 사람들의 세상을 바라보는 시선이 실제 현실에 비해 많이 뒤틀려 있는지를 인간 본성과 심리에 의거해서 소개하며, 조금 더 세상을 이성적으로 바라볼수 있는 10가지 방안을 제시한다.
+      완전히 다른 각도의 시선은 언제나 환영이고, 거기에다 그것이 탄탄한 데이터와 논리로 뒷받침되어 있다면 그것이 바로 훌륭한 책이 아닐까. 이 책이 바로 그런 책이다.
+    `,
+  },
+  {
     title: `작별인사`,
     author: '김영하',
     date: '2023.03',
