@@ -4,6 +4,16 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: '헤어질 결심 (2022)',
+    date: '2023.04',
+    poster:
+      'https://upload.wikimedia.org/wikipedia/ko/c/c6/%ED%97%A4%EC%96%B4%EC%A7%88_%EA%B2%B0%EC%8B%AC_%ED%8F%AC%EC%8A%A4%ED%84%B0.jpg',
+    rating: 3.5,
+    text: `
+      나는 박찬욱의 영화가 좋다. 조금 어려웠지만 색감이 강렬하게 기억에 남는다.
+    `,
+  },
+  {
     title: 'The Menu (2022)',
     date: '2023.01',
     poster:
