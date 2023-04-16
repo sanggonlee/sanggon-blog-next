@@ -56,7 +56,11 @@ function ReviewItem({
             <StarRating rating={rating} />
           </StarRatingWrapper>
         )}
-        <Text>{text}</Text>
+        <Text>
+          {text.split('\n').map(((t, i) => (
+            <Line key={i}>{t}</Line>
+          )))}
+        </Text>
       </div>
     </ReviewItemWrapper>
   );
@@ -85,4 +89,9 @@ const StarRatingWrapper = styled.div`
 
 const Text = styled.p`
   margin-block-start: 1rem;
+`;
+
+const Line = styled.p`
+  margin-block-start: 0rem;
+  margin-block-end: 0rem;
 `;
