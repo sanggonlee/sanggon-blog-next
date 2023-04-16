@@ -4,6 +4,16 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: 'The Unholy (2021)',
+    date: '2023.04',
+    poster:
+      'https://upload.wikimedia.org/wikipedia/en/b/b2/The_Unholy_2021_Film_Poster.png',
+    rating: 2,
+    text: `
+      초반엔 그러려니 하고 봤는데 후반으로 갈수록 허접한 연출과 연기, 식상한 플롯 등 그냥 별로였던 영화.
+    `,
+  },
+  {
     title: '헤어질 결심 (2022)',
     date: '2023.04',
     poster:
@@ -38,7 +48,7 @@ const reviews = [
     date: '2022.11',
     poster:
       'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcsOQ0IJOSZn3W_35Hq4AYMiNQoPdAe89inJR03te1u8Bnh-NkkhXQkzFHDsyyQ8DsfQgszGQvB5JR0gL-FTANnUFtWdIr3-1zECwfHbu5yHd49tgRyk2Yit81AaddbvXHTJUAr80Elu1vpY0Aj9imdvWd5GX18BmLMsNuhSzLM_T6k83mMWi0w3NjKQ/s585/ChristmaswithYou.JPG',
-    rating: 2,
+    rating: 1.5,
     text: `
       난 크리스마스 영화에서 뭘 기대했던 걸까?
     `,
