@@ -3,6 +3,15 @@ import ReviewList from '../../components/ReviewList';
 import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
+    {
+    title: `구의 증명`,
+    author: '최진영',
+    date: '2023.04',
+    rating: 3.5,
+    text: `
+      초월적인 사랑에 관한 이야기는 수도 없이 있었지만 그것을 죽은 연인을 먹는다는 엽기적인 형태와 동시에 이렇게 먹먹하고 슬프게 표현한 작품은 있었을까?
+    `,
+  },
   {
     title: `미움받을 용기`,
     author: '기시미 이치로, 고가 후미타케',
