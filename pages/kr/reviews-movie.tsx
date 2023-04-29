@@ -4,6 +4,16 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: 'The Ninth Gate (1999)',
+    date: '2023.04',
+    poster:
+      'https://m.media-amazon.com/images/M/MV5BYWMwM2E4MGEtMGMwNy00ODdlLWJkMGYtMDQzNTBlMDZhZTllXkEyXkFqcGdeQXVyOTM3NjgzNTE@._V1_.jpg',
+    rating: 3.5,
+    text: `
+      그런대로 재밌게 봤다. 오컬트적인 부분을 더 기대했는데 그보다는 스릴러가 주류를 이룬다.
+    `,
+  },
+  {
     title: 'The Unholy (2021)',
     date: '2023.04',
     poster:
@@ -374,7 +384,7 @@ const reviews = [
     date: '2021.04',
     poster:
       'https://lumiere-a.akamaihd.net/v1/images/p_soul_disneyplus_v2_20907_764da65d.jpeg',
-    rating: 4.5,
+    rating: 4,
     text: `픽사 애니메이션들은 왠만해선 실망시키진 않는듯. 삶은 꿈이 아니다. 가벼운 느낌으로 다가오지만 본질주의와 실존주의에 대한 깊은 고찰을 다룬다. 또한 깊게 생각하고 보지 않아도 이야기만으로도 재밌다.`,
   },
   {
