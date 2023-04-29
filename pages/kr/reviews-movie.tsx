@@ -111,6 +111,16 @@ const reviews = [
     `,
   },
   {
+    title: 'Incantation (2022)',
+    date: '2022.08',
+    poster:
+      'https://upload.wikimedia.org/wikipedia/en/b/b5/Incantation_%28film%29.jpeg',
+    rating: 4.5,
+    text: `
+      굉장히 재밌게 봤다. 설정도 좋았고 충격적인 반전과 연결시킨 연출기법, 미스터리 요소가 특히 마음에 들었다. 여운이 꽤 오래 남는다.
+    `,
+  },
+  {
     title: 'The Dark Tower (2017)',
     date: '2022.07',
     poster:
