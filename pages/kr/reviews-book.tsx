@@ -3,6 +3,16 @@ import ReviewList from '../../components/ReviewList';
 import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
+  {
+    title: `그 많던 싱아는 누가 다 먹었을까`,
+    author: '박완서',
+    date: '2023.05',
+    rating: 4,
+    text: `
+      작가 본인의 말대로 이걸 소설이라고 할수 있을까라는 생각이 들긴 했지만 일제시대와 근대 사이의 독특한 시대에 위치한 박완서의 삶은 그 자체가 더없이 훌륭한 이야깃거리였다.
+      게다가 문장 하나하나를 어떻게 이렇게 담백하게 적을수 있었을까 싶을 정도로 읽는 맛이 있었다.
+    `,
+  },
     {
     title: `구의 증명`,
     author: '최진영',
