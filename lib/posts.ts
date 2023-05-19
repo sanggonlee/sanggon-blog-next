@@ -27,6 +27,7 @@ export type PostMetadata = {
   title: string;
   date: string;
   category: string;
+  hidden?: boolean;
   tags: string[];
 };
 
@@ -62,8 +63,8 @@ export function getPostMetadata(
   params: PostFetchParams,
 ): PostMetadata {
   const matterResult = getPostMatterResult(slug, params);
-  const { title, date, category, tags = [] } = matterResult.data;
-  return { title, date, category, tags };
+  const { title, date, category, hidden, tags = [] } = matterResult.data;
+  return { title, date, category, hidden, tags };
 }
 
 function getPostMatterResult(
@@ -99,16 +100,18 @@ export function getPostItems(params: PostFetchParams): PostItemData[] {
   return fileNames
     .map(fileName => {
       const slug = fileName.replace(/\.mdx?$/, '');
-      const { title, date, category, tags } = getPostMetadata(slug, { lang });
+      const { title, date, category, tags, hidden } = getPostMetadata(slug, { lang });
       return {
         slug,
         title,
         date,
         category,
         tags,
+        hidden,
         path: `/${lang}/${slug}`,
       };
     })
+    .filter(({ hidden }) => !hidden)
     .filter(({ category }) => !params.category || category === params.category)
     .sort(byDescendingDate);
 }
