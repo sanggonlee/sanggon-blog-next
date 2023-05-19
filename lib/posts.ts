@@ -63,7 +63,7 @@ export function getPostMetadata(
   params: PostFetchParams,
 ): PostMetadata {
   const matterResult = getPostMatterResult(slug, params);
-  const { title, date, category, hidden, tags = [] } = matterResult.data;
+  const { title, date, category, hidden = false, tags = [] } = matterResult.data;
   return { title, date, category, hidden, tags };
 }
 
