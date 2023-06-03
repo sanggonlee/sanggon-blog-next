@@ -4,6 +4,26 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: 'Coherence (2013)',
+    date: '2023.06',
+    poster:
+      'https://resizing.flixster.com/KE2obuYCV6mRcnA1Ap4ic1pYi2A=/206x305/v2/https://flxt.tmsimg.com/assets/p10678538_p_v8_ak.jpg',
+    rating: 3,
+    text: `
+      초반부가 조금 엉뚱한 이유로 정말 좋았는데 뭔가 지극히 서양인스러운 파티를 볼수 있었기 때문이다. 플롯도 좋았고 연출도 좋았지만 이상하게도 소재가 조금 식상하게 느껴졌다.
+    `,
+  },
+  {
+    title: 'Donnie Darko (2001)',
+    date: '2023.05',
+    poster:
+      'https://resizing.flixster.com/Lmz185ZcvAqNcdNNv0JBnbnTfOY=/206x305/v2/https://flxt.tmsimg.com/assets/p27378_p_v8_aq.jpg',
+    rating: 3.5,
+    text: `
+      재밌게 보긴 했지만 조금 어려웠고 메세지도 조금 모호했다. 좋은 의미로 머릿속을 혼란스럽게 했던 영화였다.
+    `,
+  },
+  {
     title: 'The Ninth Gate (1999)',
     date: '2023.04',
     poster:
