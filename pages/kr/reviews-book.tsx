@@ -4,6 +4,16 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: `종의 기원`,
+    author: '정유정',
+    date: '2023.06',
+    rating: 4,
+    text: `
+      어떻게 글을 이렇게 잘 쓸수 있을까, 어떻게 하면 정유정 같은 필력을 가지게 될까.
+      <완전한 행복>보다 더 잘 쓴 소설이라고 느꼈다. 심리묘사가 뛰어나고 하나의 미스터리가 풀리더라도 또 다른 미스터리가 항상 남겨져 있어 흡입력이 끊어지지 않았다.
+    `,
+  },
+  {
     title: `인생에 한번은 차라투스트라`,
     author: '이진우',
     date: '2023.06',
