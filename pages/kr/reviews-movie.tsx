@@ -4,6 +4,16 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: 'Dungeons & Dragons: Honor Among Thieves (2023)',
+    date: '2023.07',
+    poster:
+      'https://upload.wikimedia.org/wikipedia/en/0/03/Theatrical_poster_for_Dungeons_and_Dragons%2C_Honor_Among_Thieves.jpg',
+    rating: 3.5,
+    text: `
+      재밌게 봤다. 플롯은 뻔한것 같으면서도 뻔하지 않은것 같았다가 뻔했지만 D&D 세계관의 톡톡 튀는 설정들과 세계관 연출을 보는 것만으로도 즐거움이 있었다. 코미디도 좋았음.
+    `,
+  },
+  {
     title: 'Coherence (2013)',
     date: '2023.06',
     poster:
