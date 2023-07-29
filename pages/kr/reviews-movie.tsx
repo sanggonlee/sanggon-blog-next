@@ -3,6 +3,17 @@ import ReviewList from '../../components/ReviewList';
 import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
+    {
+    title: '길복순 (2023)',
+    date: '2023.07',
+    poster:
+      'https://upload.wikimedia.org/wikipedia/en/thumb/c/c0/Kill_Boksoon.jpg/220px-Kill_Boksoon.jpg',
+    rating: 3,
+    text: `
+      아무 생각없이 보면 재밌게 볼수 있는 영화인것 같고 실제로도 그런 의도로 제작되었을수도 있겠지만 그럼에도 뭔가 미묘한 것이 있다는 인상을 지울수 없었다.
+      가령 킬러들의 세계가 일반인이 쉽게 이해할수 없는 것이라고 해도 캐릭터들이 너무 가볍게 느껴지는 것과 상황과의 간극에서 오는 일종의 판타지가 만들어내는 위화감?
+    `,
+  },
   {
     title: 'Dungeons & Dragons: Honor Among Thieves (2023)',
     date: '2023.07',
