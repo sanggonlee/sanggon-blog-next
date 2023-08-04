@@ -3,7 +3,17 @@ import ReviewList from '../../components/ReviewList';
 import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
-    {
+  {
+    title: '브로커 (2022)',
+    date: '2023.07',
+    poster:
+      'https://upload.wikimedia.org/wikipedia/en/4/41/Broker_%282022_film%29.jpg',
+    rating: 4.5,
+    text: `
+      고레에다 히로카즈는 빛을 참 잘쓰는 감독이라는 생각이 들었다. 미장센이 단연 압권이다. 특히 대관람차씬은 잊을수가 없다.
+    `,
+  },
+  {
     title: '길복순 (2023)',
     date: '2023.07',
     poster:
