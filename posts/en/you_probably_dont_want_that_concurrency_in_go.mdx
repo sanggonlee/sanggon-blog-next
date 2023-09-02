@@ -5,9 +5,6 @@ category: tech
 tags: ['Development', 'Article']
 ---
 
-import CaptionedImage from '../../components/CaptionedImage';
-
-
 **Disclaimer**: This post was published on [Medium](https://medium.com/nerd-for-tech/you-probably-dont-want-that-concurrency-in-go-109421e8d23) on May 25th, 2021.
 
 ## Prelude
@@ -46,6 +43,8 @@ Recently I had a chance to look at the source code of [io.MultiWriter](https://g
 It can be used for writing the same data to multiple IO destinations. For example, while working on [plum](https://github.com/sanggonlee/plum) I needed to write a JSON stream to three destinations: WebSocket connection, a file, and STDOUT (for logging).
 
 You might be surprised to see how simple the source code of io.MultiWriter's `Write` method is:
+
+import CaptionedImage from '../../components/CaptionedImage';
 
 <CaptionedImage
   src="https://miro.medium.com/max/583/1*fpt0B3bUX9btKyhw4J_3TQ.png"
