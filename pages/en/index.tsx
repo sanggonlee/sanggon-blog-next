@@ -14,7 +14,7 @@ export default function EnHome({ postItems }) {
 export async function getStaticProps() {
   return {
     props: {
-      postItems: getPostItems({ lang: 'en' }),
+      postItems: await getPostItems({ lang: 'en' }),
     },
   };
 }

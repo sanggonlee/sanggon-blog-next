@@ -14,7 +14,7 @@ export default function KrTrips({ postItems }) {
 export async function getStaticProps() {
   return {
     props: {
-      postItems: getPostItems({ lang: 'kr', category: 'trips' }),
+      postItems: await getPostItems({ lang: 'kr', category: 'trips' }),
     },
   };
 }

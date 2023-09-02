@@ -14,7 +14,7 @@ export default function EnTech({ postItems }) {
 export async function getStaticProps() {
   return {
     props: {
-      postItems: getPostItems({ lang: 'en', category: 'tech' }),
+      postItems: await getPostItems({ lang: 'en', category: 'tech' }),
     },
   };
 }

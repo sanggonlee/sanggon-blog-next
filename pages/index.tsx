@@ -14,7 +14,7 @@ export default function KrHome({ postItems }) {
 export async function getStaticProps() {
   return {
     props: {
-      postItems: getPostItems({ lang: 'kr' }),
+      postItems: await getPostItems({ lang: 'kr' }),
     },
   };
 }

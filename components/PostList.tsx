@@ -21,12 +21,13 @@ const Wrapper = styled.div``;
 
 type PostItemProps = PostItemData;
 
-function PostItem({ title, date, tags, path }: PostItemProps) {
+function PostItem({ title, date, tags, path, preview }: PostItemProps) {
   return (
-    <Link href={path}>
+    <Link href={path} passHref>
       <ItemWrapper>
         <Title>{title}</Title>
         <Date>{date}</Date>
+        <Preview>{preview}</Preview>
         <Tags>
           {tags.map((tag, index) => (
             <span key={index}>{tag}</span>
@@ -68,6 +69,14 @@ const Title = styled.h3``;
 
 const Date = styled.div`
   color: darkgrey;
+`;
+
+const Preview = styled.div`
+  width: 100%;
+  padding: 1rem 0 0 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `;
 
 const Tags = styled.div`

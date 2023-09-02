@@ -244,6 +244,7 @@ const BottomFader = styled.div`
 
 const ChildWrapper = styled.div`
   flex: 1;
+  width: 100%;
 `;
 
 const Footer = styled.footer`

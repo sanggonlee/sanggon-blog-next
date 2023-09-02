@@ -14,7 +14,7 @@ export default function EnOthers({ postItems }) {
 export async function getStaticProps() {
   return {
     props: {
-      postItems: getPostItems({ lang: 'en', category: 'others' }),
+      postItems: await getPostItems({ lang: 'en', category: 'others' }),
     },
   };
 }

@@ -25,7 +25,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const postData = await getPostData(params.slug, { lang: 'kr' });
+  const postData = await getPostData(params.slug, { lang: 'kr', props: { content: true }  });
   const comments = getComments(postData.slug);
   return {
     props: {

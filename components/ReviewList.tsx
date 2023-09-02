@@ -68,7 +68,7 @@ function ReviewItem({
 
 const ReviewItemWrapper = styled.div`
   display: flex;
-  margin: 2rem 0;
+  margin: 2rem 0.5rem;
 `;
 
 const Title = styled.strong``;

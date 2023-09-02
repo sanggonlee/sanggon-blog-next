@@ -10,6 +10,10 @@ const postsDirectory = path.join(process.cwd(), 'posts');
 type PostFetchParams = {
   lang?: Language;
   category?: string;
+  props?: {
+    preview?: boolean;
+    content?: boolean;
+  };
 };
 
 export function getAllPostIds(params: PostFetchParams) {
@@ -33,7 +37,8 @@ export type PostMetadata = {
 
 export type PostData = PostMetadata & {
   slug: string;
-  content: {
+  preview?: string;
+  content?: {
     compiledSource: string;
   };
 };
@@ -44,8 +49,9 @@ export async function getPostData(
 ): Promise<PostData> {
   const matterResult = getPostMatterResult(slug, params);
 
-  const { title, date, category, tags } = matterResult.data;
-  const content = await serialize(matterResult.content);
+  const { title, date, category, hidden = false, tags } = matterResult.data;
+  const preview = params.props?.preview ? matterResult.content.substring(0, 150) : null;
+  const content = params.props?.content ? await serialize(matterResult.content) : null;
 
   // Combine the data with the id
   return {
@@ -55,16 +61,9 @@ export async function getPostData(
     category,
     tags,
     content,
+    preview,
+    hidden,
   };
-}
-
-export function getPostMetadata(
-  slug: string,
-  params: PostFetchParams,
-): PostMetadata {
-  const matterResult = getPostMatterResult(slug, params);
-  const { title, date, category, hidden = false, tags = [] } = matterResult.data;
-  return { title, date, category, hidden, tags };
 }
 
 function getPostMatterResult(
@@ -82,25 +81,20 @@ function getPostDirectory({ lang }: PostFetchParams) {
   return path.join(postsDirectory, lang ?? '');
 }
 
-export type PostItemData = {
-  slug: string;
+export type PostItemData = PostData & {
   path: string;
-  title: string;
-  date: string;
-  tags: string[];
 };
-
-export function getPostItems(params: PostFetchParams): PostItemData[] {
+export async function getPostItems(params: PostFetchParams): Promise<PostData[]> {
   const { lang } = params;
   if (!lang) {
     throw new Error('getPostItems | lang is required');
   }
 
   const fileNames = fs.readdirSync(getPostDirectory({ lang }));
-  return fileNames
-    .map(fileName => {
+  const items = await Promise.all(fileNames
+    .map(async fileName => {
       const slug = fileName.replace(/\.mdx?$/, '');
-      const { title, date, category, tags, hidden } = getPostMetadata(slug, { lang });
+      const { title, date, category, tags, hidden, preview } = await getPostData(slug, { lang, props: { preview: true } });
       return {
         slug,
         title,
@@ -108,9 +102,11 @@ export function getPostItems(params: PostFetchParams): PostItemData[] {
         category,
         tags,
         hidden,
+        preview,
         path: `/${lang}/${slug}`,
       };
-    })
+    }));
+  return items
     .filter(({ hidden }) => !hidden)
     .filter(({ category }) => !params.category || category === params.category)
     .sort(byDescendingDate);

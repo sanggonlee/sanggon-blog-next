@@ -14,7 +14,7 @@ export default function EnNews({ postItems }) {
 export async function getStaticProps() {
   return {
     props: {
-      postItems: getPostItems({ lang: 'en', category: 'news' }),
+      postItems: await getPostItems({ lang: 'en', category: 'news' }),
     },
   };
 }

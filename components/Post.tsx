@@ -7,11 +7,11 @@ import StarRating from './StarRating';
 import { COLORS } from '../lib/styles';
 
 export default function Post({ postData, comments }) {
-  const { content, slug } = postData;
+  const { title, date, content, slug } = postData;
   return (
     <Wrapper>
-      <Title>{postData.title}</Title>
-      <Date>{postData.date}</Date>
+      <Title>{title}</Title>
+      <Date>{date}</Date>
       <Content>
         <MDXRemote {...content} components={{ CaptionedImage, StarRating }}></MDXRemote>
       </Content>
