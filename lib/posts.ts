@@ -50,7 +50,7 @@ export async function getPostData(
   const matterResult = getPostMatterResult(slug, params);
 
   const { title, date, category, hidden = false, tags } = matterResult.data;
-  const preview = params.props?.preview ? matterResult.content.substring(0, 150) : null;
+  const preview = params.props?.preview ? matterResult.content.substring(0, 300) : null;
   const content = params.props?.content ? await serialize(matterResult.content) : null;
 
   // Combine the data with the id
