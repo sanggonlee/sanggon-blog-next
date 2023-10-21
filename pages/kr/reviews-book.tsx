@@ -4,6 +4,14 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: `젊은 베르테르의 슬픔`,
+    author: '요한 볼프강 폰 괴테',
+    date: '2023.10',
+    text: `
+      유려한 문체와 시적인 표현들, 어쩌면 당시로서는 파격적인 발상은 흥미로웠으나 지극히 감성적인 베르테르에게로의 몰입은 크게 되지 않았다.
+    `,
+  },
+  {
     title: `김약국의 딸들`,
     author: '박경리',
     date: '2023.09',
