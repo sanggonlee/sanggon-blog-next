@@ -9,7 +9,7 @@ export default function Head() {
       <title>{siteTitle}</title>
       <meta
         name="description"
-        content="Sang-gon's blog on software development articles, short stories, thoughts, etc"
+        content="Sang-gon's blog on software development articles, short stories, thoughts, etc. 소설, 아마추어소설"
       />
       <meta
         property="og:image"
