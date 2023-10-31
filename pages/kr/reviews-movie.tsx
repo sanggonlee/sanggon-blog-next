@@ -4,6 +4,16 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: 'The Creator (2023)',
+    date: '2023.10',
+    poster:
+      'https://m.media-amazon.com/images/M/MV5BNDUyNTIzNDQtYTZmMi00M2FlLTgyZjUtYWViZWNhMDYzMjE4XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg',
+    rating: 3.5,
+    text: `
+      그런대로 재밌게 봤다. 플롯이 전형적인 헐리우드의 방식을 따르고 있고 서사도 하나하나 따져보면 어느것 하나 새로운게 없지만 그럼에도 여전히 헐리우드의 공식은 통한다는걸 보여주는듯 하다.
+    `,
+  },
+  {
     title: '브로커 (2022)',
     date: '2023.07',
     poster:

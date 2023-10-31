@@ -4,6 +4,16 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: `카오스`,
+    author: '제임스 글릭',
+    date: '2023.10',
+    rating: 3,
+    text: `
+    과학서적이라고는 해도 일반대중을 겨냥해 쓰인 책이라고 생각했는데 생각보다 테크니컬한 내용이 많고 어려웠다.
+    우리는 학문의 전환기에 살고 있는건지도 모른다. 아직도 이해 안가는 부분은 많지만 카오스에 대해 조금 더 많이 배울수 있었다.
+    `,
+  },
+  {
     title: `젊은 베르테르의 슬픔`,
     author: '요한 볼프강 폰 괴테',
     date: '2023.10',
