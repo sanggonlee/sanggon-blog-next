@@ -4,6 +4,17 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: 'Her (2013)',
+    date: '2023.11',
+    poster:
+      'https://upload.wikimedia.org/wikipedia/en/4/44/Her2013Poster.jpg',
+    rating: 3.5,
+    text: `
+      재밌게 봤다. 기대했던 것만큼 독창적인 영화라고는 생각되지 않았다.
+      이 영화에서 상당히 포지션을 잘 잡은것은 주인공이 사회 부적응자같은 것이 아닌, 상당히 매력적인 캐릭터로 그려졌고 그런 사람이 AI와 사랑에 빠졌다는 점이다.
+    `,
+  },
+  {
     title: 'The Creator (2023)',
     date: '2023.10',
     poster:
