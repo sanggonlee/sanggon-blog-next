@@ -4,6 +4,16 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: "Don't Look Up (2021)",
+    date: '2023.12',
+    poster:
+      'https://m.media-amazon.com/images/M/MV5BNzk0OWQzMDQtODg1ZC00Yjg2LWJjYzAtNGRjMjE2M2FlYjZjXkEyXkFqcGdeQXVyMTMzNzIyNDc1._V1_.jpg',
+    rating: 3.5,
+    text: `
+      블랙 코미디이고 그런 맥락에서 영화의 내러티브는 분명히 과장된 톤이 들어가 있지만 실제 인류가 갑자기 종말론적인 위기에 놓인다고 해도 이후 벌어질 일은 크게 다르지 않을것 같고 그 점이 공포스럽게 다가온다.
+    `,
+  },
+  {
     title: 'Her (2013)',
     date: '2023.11',
     poster:
