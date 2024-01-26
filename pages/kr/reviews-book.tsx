@@ -4,6 +4,16 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: `고등어`,
+    author: '공지영',
+    date: '2024.01',
+    rating: 4,
+    text: `
+      대의와 이상을 위해 몸바쳤던 것이 결국엔 다 부질없는 것이었다고 말하는 명우에게, 운전면허 따위와는 바꿀수 없는 눈부신 시간이 있었다고 하는 은림의 말이
+      작가가 하고 싶었던 말이지 않았을까 싶다. 뜨겁게 읽은 책이다.
+    `,
+  },
+  {
     title: `공감의 배신`,
     author: '폴 블룸',
     date: '2024.01',
