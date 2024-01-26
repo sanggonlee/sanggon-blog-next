@@ -4,6 +4,16 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: "Talk to Me (2022)",
+    date: '2024.01',
+    poster:
+      'https://images.ctfassets.net/22n7d68fswlw/4ywI5B98p5hNQMeccOXrpj/ac7e14aae8571476c35374cfd9b3beba/TalkToMe_VOD_Poster.jpg',
+    rating: 3.5,
+    text: `
+      상당히 흡입력 있는 영화였다. 클리셰는 조금 있었지만 그래도 전체적으로 뻔한 전개는 아니었고 재밌게 봤다.
+    `,
+  },
+  {
     title: "Don't Look Up (2021)",
     date: '2023.12',
     poster:
