@@ -4,6 +4,16 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: `너의 췌장을 먹고 싶어`,
+    author: '스미노 요루',
+    date: '2024.02',
+    rating: 3,
+    text: `
+      연애소설이라고 믿고 읽었지만 성장소설이었던 건에 관하여... 결말부분의 반전은 충격이었고 마음에 들었으나 오글거리는 대사들과 라이트노벨스러운 캐릭터성, 그리고
+      성장소설이라는 각도에서 본다면 화자의 성장이 너무 억지스럽게 느껴졌다.
+    `,
+  },
+  {
     title: `고등어`,
     author: '공지영',
     date: '2024.01',
