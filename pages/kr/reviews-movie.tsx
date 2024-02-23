@@ -4,6 +4,16 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: "Margin Call (2011)",
+    date: '2024.02',
+    poster:
+      'https://m.media-amazon.com/images/M/MV5BMjE5NzkyNDI2Nl5BMl5BanBnXkFtZTcwMTYzNDc2Ng@@._V1_.jpg',
+    rating: 3.5,
+    text: `
+      좋은 몰입도과 높은 현실감. 재밌었다.
+    `,
+  },
+  {
     title: "Talk to Me (2022)",
     date: '2024.01',
     poster:
