@@ -4,6 +4,16 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: "Dune: Part Two (2024)",
+    date: '2024.03',
+    poster:
+      'https://upload.wikimedia.org/wikipedia/en/thumb/5/52/Dune_Part_Two_poster.jpeg/220px-Dune_Part_Two_poster.jpeg',
+    rating: 4,
+    text: `
+      듄 1편을 봤을때 생각나는 것이 훌륭한 영상미였다면 이번 파트2는 그에 더해 전반적으로 더 세심한 연출로 전달력이 더 좋았다. 원작을 읽어보지는 않았지만 이보다 더 어떻게 잘 구현할수 있을까 싶다.
+    `,
+  },
+  {
     title: "Margin Call (2011)",
     date: '2024.02',
     poster:
