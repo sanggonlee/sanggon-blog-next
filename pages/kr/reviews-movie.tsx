@@ -4,13 +4,23 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: "The Notebook (2004)",
+    date: '2024.04',
+    poster:
+      'https://m.media-amazon.com/images/M/MV5BN2I3ZmRjODAtMjBiNy00ZmEwLWEzZjItZjM4NGZhNGYyNTA0XkEyXkFqcGdeQXVyMTEwNDU1MzEy._V1_.jpg',
+    rating: 3.5,
+    text: `
+      재밌게 봤다. 사실 부잣집 딸과 가난한 청년의 사랑은 너무나 닳고 닳은 소재이지만 그럼에도 매번 통할수 밖에 없는 소재인듯도 하다.
+    `,
+  },
+  {
     title: "파묘 (2024)",
     date: '2024.03',
     poster:
       'https://newsimg.sedaily.com/2024/03/12/2D6LVKWGAX_1.jpg',
     rating: 3.5,
     text: `
-      묘를 파헤친다는 행위인 파묘라는 섬뜩한 소재로 미스터리를 몰아가는 초중반 연출이 정말 좋았다. 중후반 서사에서 약간 삼류영화 느낌도 나고 좀 뻔하게 느껴지는 부분이 있어서 초반과 대비되는 면이 컸다.
+      묘를 파헤친다는 행위인 파묘라는 섬뜩한 소재로 미스터리를 몰아가는 초중반 연출이 정말 좋았다. 중후반에서 약간 삼류영화 느낌도 나고 좀 뻔하게 느껴지는 부분이 있어서 초반과 대비되는 면이 컸다.
     `,
   },
   {
