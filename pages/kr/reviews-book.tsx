@@ -4,6 +4,16 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: `The Maid`,
+    author: 'Nita Prose',
+    date: '2024.05',
+    rating: 3,
+    text: `
+      캐릭터를 중심으로 전개한 소설이니만큼 캐릭터 자체와 결말부분 그 성장은 비교적 흥미로웠으나 평이한 플롯과 민숭맨숭한 서스펜스 작업에 아쉬움이 남는 작품이었다.
+      쉽게쉽게 읽히는 점이 장점이라면 장점.
+    `,
+  },
+  {
     title: `노르웨이의 숲`,
     author: '무라카미 하루키',
     date: '2024.04',
