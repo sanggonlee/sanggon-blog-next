@@ -4,6 +4,18 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: "Inside Out 2 (2024)",
+    date: '2024.06',
+    poster:
+      'https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/Inside_Out_2_poster.jpg/220px-Inside_Out_2_poster.jpg',
+    rating: 4,
+    text: `
+      한 사람의 감정선을 따라가는 것에 있어서 문자 그대로 감정들을 보여주는 것만큼 직관적으로 묘사할수 있는 방법이 또 있을까?
+      인사이드 아웃 1이 심리학의 중요한 부분들을 기발하고 재밌는 상상력으로 빚어낸 좋은 작품이었는데 그 점을 잘 계승한 작품이었다.
+      라일리라는 한 사람의 인생을 따라가는 시리즈들이 계속 나오지 않을까 생각한다.
+    `,
+  },
+  {
     title: "The Notebook (2004)",
     date: '2024.04',
     poster:
