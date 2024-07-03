@@ -4,6 +4,15 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: `플라멩코 추는 남자`,
+    author: '허태연',
+    date: '2024.07',
+    rating: 3,
+    text: `
+      빠르고 가볍게 읽을수 있는 무난한 작품이었다. 시대를 반영하려고 한 노력과 이혼가정으로 인한 헤어짐 등 새롭다면 새로운 주제들이 눈에 들어왔지만 큰 울림은 받을수 없었다.
+    `,
+  },
+  {
     title: `암흑의 숲 (삼체 2부)`,
     author: '류츠신',
     date: '2024.06',
