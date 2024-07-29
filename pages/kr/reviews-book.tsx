@@ -4,6 +4,16 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: `뇌, 인간을 읽다`,
+    author: '마이클 코벌리스',
+    date: '2024.07',
+    rating: 2.5,
+    text: `
+      뇌과학의 여러가지 사실들을 짧은 20개의 챕터로 나누어 알려주는데 상당히 흥미로운 내용도 있긴 했지만
+      전체적으로 내용에 깊이가 부족하고 무엇보다 글이 중구난방하는 경향이 있어 전달력이 떨어졌다.
+    `,
+  },
+  {
     title: `플라멩코 추는 남자`,
     author: '허태연',
     date: '2024.07',
