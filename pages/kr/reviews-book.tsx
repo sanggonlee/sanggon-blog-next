@@ -4,6 +4,17 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: `심판`,
+    author: '베르나르 베르베르',
+    date: '2024.08',
+    rating: 2.5,
+    text: `
+      희곡을 너무 읽어본적이 없어서 그런것일까?
+      베르나르 베르베르의 작품을 읽어보는건 정말 오랜만인데 내가 기억하던 그 재기발랄한 상상력은 어디로 간건지,
+      특별한 구석을 찾아보기 힘든 작품이었다.
+    `,
+  },
+  {
     title: `김지원 소설 선집 (3) - 물이 물속으로 흐르듯 외`,
     author: '김지원',
     date: '2024.08',
