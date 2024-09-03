@@ -4,6 +4,15 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: `100초 정치사회 수업`,
+    author: 'CBS 노컷뉴스 씨리얼 제작팀',
+    date: '2024.09',
+    rating: 3,
+    text: `
+      어쩌면 초등학생 정도를 타겟으로 한 책이었던건지 정치에 무지한 내가 보기에도 기본적인 내용들이 많았고 깊이는 많이 떨어졌으나 그래도 여러 사회이슈들을 알기 쉽게 소개해주어서 몇가지 쉽게 배울수 있었다.
+    `,
+  },
+  {
     title: `심판`,
     author: '베르나르 베르베르',
     date: '2024.08',
