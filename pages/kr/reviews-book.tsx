@@ -4,6 +4,16 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: `Piranesi`,
+    author: 'Susanna Clarke',
+    date: '2024.09',
+    rating: 3.5,
+    text: `
+      주인공 피라네시의 일지를 따라가면서 기억의 한 점에서 과거에 대한 묘사는 전혀 하지 않음으로써 완전한 미스터리로 남겨놓는 전개방식이 흥미로웠다.
+      세계관과 그에 연결되는 상징들에서 조금 어려운 부분이 있었고 캐릭터는 크게 매력적이지 않았다. 이런 식으로의 스토리텔링도 가능하구나 라는것을 느끼게 해주었다.
+    `,
+  },
+  {
     title: `100초 정치사회 수업`,
     author: 'CBS 노컷뉴스 씨리얼 제작팀',
     date: '2024.09',
