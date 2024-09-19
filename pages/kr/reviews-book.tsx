@@ -4,6 +4,16 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: `가난한 사람들`,
+    author: '표도르 도스토예프스키',
+    date: '2024.09',
+    text: `
+      가난이라는 것은 사람을 얼마나 사람같지 않은 비참한 존재로 만드는지, 또 극빈에서 벗어나기만 한다면 그것만으로도 얼마나 주변의 인식이 바뀌는지.
+      가난으로 인한 답답함과 빡빡함이 읽는 내 목까지 조여오는것 같았다.
+      이런 작품이 처녀작이라니, 도스토예프스키는 역시 도스토예프스키다.
+    `,
+  },
+  {
     title: `Piranesi`,
     author: 'Susanna Clarke',
     date: '2024.09',
