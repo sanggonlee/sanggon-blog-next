@@ -4,6 +4,15 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: `책 한번 써봅시다`,
+    author: '장강명',
+    date: '2024.09',
+    rating: 3.5,
+    text: `
+      많은 용기를 얻을수 있었던 책이었다. 작법에 관한 내용도 있기는 하지만 그보단 작가라는것이 무엇인지, 또 업계 상황이라던가 작가가 되려면 어떻게 해야 하는지 등등 여러 주변지식들을 알려주는데 이것이 훨씬 더 많은 도움이 되었다.
+    `,
+  },
+  {
     title: `가난한 사람들`,
     author: '표도르 도스토예프스키',
     date: '2024.09',
