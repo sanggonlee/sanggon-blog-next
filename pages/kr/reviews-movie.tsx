@@ -4,6 +4,16 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: "그대들은 어떻게 살 것인가 (2023)",
+    date: '2024.10',
+    poster:
+      'https://upload.wikimedia.org/wikipedia/en/4/41/How_Do_You_Live_poster.jpg',
+    rating: 3.5,
+    text: `
+      듣던 대로 어려운 작품이었다. 여러 상징성은 고사하고 스토리라인을 따라가는 것만도 그리 쉽지많은 않았는데 그래도 지브리 특유의 환상과 현실을 뒤섞은 플롯에 재밌게 봤다.
+    `,
+  },
+  {
     title: "Inside Out 2 (2024)",
     date: '2024.06',
     poster:
