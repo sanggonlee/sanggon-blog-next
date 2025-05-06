@@ -4,7 +4,7 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
-    title: `고래`,
+    title: `[J] 고래`,
     author: '천명관',
     date: '2025.04',
     rating: 3.5,
@@ -28,7 +28,7 @@ const reviews = [
     `,
   },
   {
-    title: `자기 결정`,
+    title: `[J] 자기 결정`,
     author: '페터 비에리',
     date: '2025.02',
     rating: 3.5,
@@ -85,7 +85,7 @@ const reviews = [
     `,
   },
   {
-    title: `느리게 산다는 것의 의미`,
+    title: `[J] 느리게 산다는 것의 의미`,
     author: '피에르 쌍소',
     date: '2024.12',
     rating: 2.5,
@@ -98,7 +98,7 @@ const reviews = [
     `,
   },
   {
-    title: `인생`,
+    title: `[B] 인생`,
     author: '위화',
     date: '2024.11',
     rating: 4,
@@ -120,7 +120,7 @@ const reviews = [
     `,
   },
   {
-    title: `나의 눈부신 친구`,
+    title: `[B] 나의 눈부신 친구`,
     author: '엘레나 페란테',
     date: '2024.10',
     rating: 4,
@@ -133,7 +133,7 @@ const reviews = [
     `,
   },
   {
-    title: `완벽에 대한 반론`,
+    title: `[B] 완벽에 대한 반론`,
     author: '마이클 샌델',
     date: '2024.09',
     rating: 3.5,
@@ -154,7 +154,7 @@ const reviews = [
     `,
   },
   {
-    title: `가난한 사람들`,
+    title: `[B] 가난한 사람들`,
     author: '표도르 도스토예프스키',
     date: '2024.09',
     text: `
@@ -164,7 +164,7 @@ const reviews = [
     `,
   },
   {
-    title: `Piranesi`,
+    title: `[J] Piranesi`,
     author: 'Susanna Clarke',
     date: '2024.09',
     rating: 3.5,
@@ -174,7 +174,7 @@ const reviews = [
     `,
   },
   {
-    title: `100초 정치사회 수업`,
+    title: `[B] 100초 정치사회 수업`,
     author: 'CBS 노컷뉴스 씨리얼 제작팀',
     date: '2024.09',
     rating: 3,
@@ -183,7 +183,7 @@ const reviews = [
     `,
   },
   {
-    title: `심판`,
+    title: `[J] 심판`,
     author: '베르나르 베르베르',
     date: '2024.08',
     rating: 2.5,
@@ -216,7 +216,7 @@ const reviews = [
     `,
   },
   {
-    title: `뇌, 인간을 읽다`,
+    title: `[B] 뇌, 인간을 읽다`,
     author: '마이클 코벌리스',
     date: '2024.07',
     rating: 2.5,
@@ -226,7 +226,7 @@ const reviews = [
     `,
   },
   {
-    title: `플라멩코 추는 남자`,
+    title: `[B] 플라멩코 추는 남자`,
     author: '허태연',
     date: '2024.07',
     rating: 3,
@@ -266,7 +266,7 @@ const reviews = [
     `,
   },
   {
-    title: `노르웨이의 숲`,
+    title: `[B] 노르웨이의 숲`,
     author: '무라카미 하루키',
     date: '2024.04',
     rating: 3.5,
@@ -278,7 +278,7 @@ const reviews = [
     `,
   },
   {
-    title: `가재가 노래하는 곳`,
+    title: `[B] 가재가 노래하는 곳`,
     author: '델리아 오언스',
     date: '2024.03',
     rating: 4,
@@ -289,7 +289,7 @@ const reviews = [
     `,
   },
   {
-    title: `AI쇼크, 다가올 미래`,
+    title: `[B] AI쇼크, 다가올 미래`,
     author: '모 가댓',
     date: '2024.03',
     rating: 3.5,
@@ -300,7 +300,7 @@ const reviews = [
     `,
   },
   {
-    title: `너의 췌장을 먹고 싶어`,
+    title: `[B] 너의 췌장을 먹고 싶어`,
     author: '스미노 요루',
     date: '2024.02',
     rating: 3,
@@ -310,7 +310,7 @@ const reviews = [
     `,
   },
   {
-    title: `고등어`,
+    title: `[B] 고등어`,
     author: '공지영',
     date: '2024.01',
     rating: 4,
@@ -320,7 +320,7 @@ const reviews = [
     `,
   },
   {
-    title: `공감의 배신`,
+    title: `[B] 공감의 배신`,
     author: '폴 블룸',
     date: '2024.01',
     rating: 3.5,
@@ -332,7 +332,7 @@ const reviews = [
     `,
   },
   {
-    title: `그리고 아무 말도 하지 않았다`,
+    title: `[B] 그리고 아무 말도 하지 않았다`,
     author: '하인리히 뵐',
     date: '2023.12',
     text: `
@@ -341,7 +341,7 @@ const reviews = [
     `,
   },
   {
-    title: `300불로 떠난 이민, 20년 세계일주가 되다`,
+    title: `[B] 300불로 떠난 이민, 20년 세계일주가 되다`,
     author: '김현성',
     date: '2023.12',
     rating: 2.5,
@@ -352,7 +352,7 @@ const reviews = [
     `,
   },
   {
-    title: `일론 머스크`,
+    title: `[B] 일론 머스크`,
     author: '월터 아이작슨',
     date: '2023.11',
     rating: 4,
@@ -364,7 +364,7 @@ const reviews = [
     `,
   },
   {
-    title: `카오스`,
+    title: `[B] 카오스`,
     author: '제임스 글릭',
     date: '2023.10',
     rating: 3,
@@ -374,7 +374,7 @@ const reviews = [
     `,
   },
   {
-    title: `젊은 베르테르의 슬픔`,
+    title: `[B] 젊은 베르테르의 슬픔`,
     author: '요한 볼프강 폰 괴테',
     date: '2023.10',
     text: `
@@ -382,7 +382,7 @@ const reviews = [
     `,
   },
   {
-    title: `김약국의 딸들`,
+    title: `[B] 김약국의 딸들`,
     author: '박경리',
     date: '2023.09',
     rating: 4,
@@ -394,7 +394,7 @@ const reviews = [
     `,
   },
   {
-    title: `남아있는 나날`,
+    title: `[B] 남아있는 나날`,
     author: '가즈오 이시구로',
     date: '2023.09',
     rating: 3.5,
