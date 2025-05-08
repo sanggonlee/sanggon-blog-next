@@ -4,6 +4,18 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: `우리가 빛의 속도로 갈 수 없다면`,
+    author: '김초엽',
+    date: '2025.05',
+    rating: 3.5,
+    text: `
+      김초엽의 단편소설집. SF단편들이어서 그런지 Stories of Your Life랑 조금 비슷한 느낌을 받았는데 그보단 과학쪽으로 더 깊게 들어가지 않고 더 가볍고 산뜻하다.
+      SF라는 도구를 빌려 인본주의적이거나 현시대의 메세지를 전달한다.
+      재밌고 쉽게 읽을 수 있으면서도 생각할 거리를 던져주었던 작품들이다.
+      <우리가 빛의 속도로 갈 수 없다면>과 <관내분실>이라는 작품이 인상깊었다.
+    `,
+  },
+  {
     title: `[J] 고래`,
     author: '천명관',
     date: '2025.04',
