@@ -4,6 +4,17 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: `[J] Getting the Love You Want`,
+    author: 'Harville Hendrix, Helen LaKelly Hunt',
+    date: '2025.09',
+    rating: 4,
+    text: `
+      결혼 전 목사님한테 받는 카운셀링으로 읽은 책. Imago Therapy라는 부부관계를 치유하는 방법론을 소개하는 책이다.
+      어찌됐든 자기계발서이고 그런 점에서 직접 실행해보고 시간이 지나봐야 제대로 알 수 있겠지만 꽤나 유망한 지침서로 보인다.
+      본래 목적은 부부관계에서 어려움을 겪고 있는 사람들을 위한 것으로 보이지만 결혼 전에도 미리 알고 있는 것도 좋은 것 같다는 생각이 든다. 
+    `,
+  },
+  {
     title: `[J] 낭만적 연애와 그 후의 일상`,
     author: '알랭 드 보통',
     date: '2025.07',
