@@ -4,6 +4,37 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: "Contact (1997)",
+    date: '2025.10',
+    poster:
+      'https://upload.wikimedia.org/wikipedia/en/7/75/Contact_ver2.jpg',
+    rating: 4.5,
+    text: `
+      정말 오랜만에 가슴을 뛰게 만들었던 작품이었다. 보면서도 대체 이것을 어떻게 마무리할까가 궁금하면서 동시에 걱정도 되었는데 썩 괜찮았다.
+      믿음이라는 영역까지도 포용하려고 했던건지, 메시지에 완전히 공명하지는 못했지만 생각하게 만드는 바가 컸다.
+    `,
+  },
+  {
+    title: "Saint Maud (2019)",
+    date: '2025.10',
+    poster:
+      'https://a.ltrbxd.com/resized/sm/upload/8i/fl/ux/x4/uQjxpEYktu36ZiWKfn0t0FySmXl-0-230-0-345-crop.jpg?v=adf9e62e9b',
+    rating: 3,
+    text: `
+      사실 어떤 방향으로 흘러갈지 뻔히 예상되는 구도이긴 했으나 그래도 몰입도가 있었다. 다만 크게 특별함을 찾기도 어려웠다.
+    `,
+  },
+  {
+    title: "Good Will Hunting (1997)",
+    date: '2025.09',
+    poster:
+      'https://upload.wikimedia.org/wikipedia/en/5/52/Good_Will_Hunting.png',
+    rating: 4.5,
+    text: `
+      고전은 역시 시간이 지나도 바래지 않는 것 같다. 사람의 마음 속 깊은 곳을 건드리는 무언가가 있는 감동적인 작품이었다.
+    `,
+  },
+  {
     title: "그대들은 어떻게 살 것인가 (2023)",
     date: '2024.10',
     poster:
