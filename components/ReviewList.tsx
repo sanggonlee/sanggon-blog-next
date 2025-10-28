@@ -10,6 +10,7 @@ type ReviewData = {
   date?: string;
   rating?: number;
   text: string;
+  quotes: string[];
 };
 
 type Props = {
@@ -38,6 +39,7 @@ function ReviewItem({
   poster,
   rating,
   text,
+  quotes,
 }: ReviewData) {
   return (
     <ReviewItemWrapper>
@@ -59,6 +61,9 @@ function ReviewItem({
         <Text>
           {text.split('\n').map(((t, i) => (
             <Line key={i}>{t}</Line>
+          )))}
+          {(quotes || []).map(((q, i) => (
+            <Quote key={i}>"{q}"</Quote>
           )))}
         </Text>
       </div>
@@ -94,4 +99,10 @@ const Text = styled.p`
 const Line = styled.p`
   margin-block-start: 0rem;
   margin-block-end: 0rem;
+`;
+
+const Quote = styled.p`
+  margin-block-start: 0.1rem;
+  margin-block-end: 0.1rem;
+  font-style: italic;
 `;
