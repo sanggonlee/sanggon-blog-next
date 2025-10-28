@@ -10,7 +10,7 @@ type ReviewData = {
   date?: string;
   rating?: number;
   text: string;
-  quotes: string[];
+  quotes?: string[];
 };
 
 type Props = {
