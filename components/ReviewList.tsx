@@ -63,7 +63,7 @@ function ReviewItem({
             <Line key={i}>{t}</Line>
           )))}
           {(quotes || []).map(((q, i) => (
-            <Quote key={i}>{`"${q}"`}</Quote>
+            <Quote key={i}>{q}</Quote>
           )))}
         </Text>
       </div>
@@ -102,7 +102,9 @@ const Line = styled.p`
 `;
 
 const Quote = styled.p`
-  margin-block-start: 0.1rem;
-  margin-block-end: 0.1rem;
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+  font-size: 0.9rem;
   font-style: italic;
+  color: darkgrey;
 `;
