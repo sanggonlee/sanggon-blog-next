@@ -63,7 +63,7 @@ function ReviewItem({
             <Line key={i}>{t}</Line>
           )))}
           {(quotes || []).map(((q, i) => (
-            <Quote key={i}>"{q}"</Quote>
+            <Quote key={i}>{`"${q}"`}</Quote>
           )))}
         </Text>
       </div>
