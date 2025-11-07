@@ -34,6 +34,17 @@ const reviews = [
       고전은 역시 시간이 지나도 바래지 않는 것 같다. 사람의 마음 속 깊은 곳을 건드리는 무언가가 있는 감동적인 작품이었다.
     `,
   },
+    {
+    title: "BlackBerry (1997)",
+    date: '2025.08',
+    poster:
+      'https://entractfilms.com/medias/photos/_posterMedium/Blackberry_2000x3000.jpg',
+    rating: 3.5,
+    text: `
+      아주 재밌게 봤다. 실화바탕이긴 했지만 마이크 라자리디스와 짐 발실리의 캐릭터가 너무 매력적이다.
+      현재는 실리콘 밸리로 대변되는, 열정 위주의 테크 기업이 보여주는 특유의 컬쳐도 잘 보여준 것 같다.
+    `,
+  },
   {
     title: "그대들은 어떻게 살 것인가 (2023)",
     date: '2024.10',
