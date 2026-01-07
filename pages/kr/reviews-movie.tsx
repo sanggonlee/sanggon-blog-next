@@ -4,6 +4,17 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: "Leave the World Behind (2023)",
+    date: '2025.12',
+    poster:
+      'https://m.media-amazon.com/images/M/MV5BZjI0YzhjZjAtMzg3ZS00NTFhLWFkYjctMjE5ZGExNTk1MmJkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg',
+    rating: 3.5,
+    text: `
+      트레일러나 장르, 포스터만 보고는 무슨 영화인지 도무지 짐작할 수가 없었고 그런 면에서 진정한 미스터리 영화가 아닐까 하는 생각이 든다.
+      <더 미스트>가 생각나기는 했고 빌드업에 비해 결말도 크게 만족스럽지는 않았지만 미스터리를 영화 내내 유지하는 데에는 성공했다는 생각이다. 재밌게 봤다.
+    `,
+  },
+  {
     title: "Contact (1997)",
     date: '2025.10',
     poster:
