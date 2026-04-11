@@ -1,0 +1,72 @@
+---
+title: "Trying Vibe Coding"
+date: "2026-04-10"
+category: tech
+tags: ["Development", "Technology", "AI", "Vibe Coding"]
+---
+
+Today is a company-wide holiday, so after debating to work on my short story or doing something else, I decided to try vibe coding on my pet project (also, I wanted to try Vietnamese coffee at the new Cong Caphe location near Yonge & Eglinton while I'm doing it, and I'm liking it quite a lot so far!).
+
+The pet project was a very simple Python program that I had written a few years ago, to perform bookkeeping - it simply reads credit/debit card transaction files from banks (only Amex and TD at the time), and categorizes the spending and calculating the balance.
+
+It's just a simple CLI program that doesn't even have user interactions, and so it involved a pretty manual process.
+
+I've been meaning to improve it by implementing the UI for it and introducing a few features, for example, prompting each unseen transaction for its category.
+
+I've been using more and more AI for the past few months at work. Quite honestly, I've been pretty impressed with its improvements for the last year or so, and was aware of its rough capabilities.
+
+That said, I've used it only as supplemental tools so far and never tried pure "vibe coding" or using it for a "from-scratch" project.
+
+So I took this opportunity to revamp my pet tool at the same time as trying out vibe coding (and learning AI tools like subagents or whatnot else along the way).
+
+I had roughly 2 hours in the morning for it, and I'm actually writing this article as I'm waiting for AI to complete tasks.
+
+Obviously, I had to have a rough idea for how to approach it. I had just one major to ask: I didn't want to spend any or more than $1 every month for this project, so I wanted to avoid cloud usage and simply store things in files, for example in source control.
+
+I started with this simple prompt:
+
+```
+I want to create a new full-stack app in Next.js that accomplishes the same thing as the current project - bookkeeper program, that reads in bank transactions files and categorize the spendings. Additionally, it also needs to ask for user input when it can't identify a category for a new transaction, and remember it for future. Give me the plan for it.
+```
+
+And then there were a few things that I remembered that I decided to add and clarify:
+
+```
+A few changes to make:
+- I don't want to host a server. Store everything in Next.js (can be stored in GitHub, can be stored as JSON or yml). No need to use a full fletched database like SQLite. I might consider using the cheapest possible solution like S3.
+- In addition to TD and AMEX, it will also need to read from Scotia files - I can reference its format later.
+- I don't want to use tailwind CSS. I can use the `styled-components` library.
+- I want the flow to look like this:
+ 1. Ask to upload all the relevant transactions files
+ 2. Ask for the month to categorize
+ 3. For any transaction recrods not seen before, ask to choose its category.
+ 4. Output the CSV row as a result of the categorization, and also, show the graph comparing the month-to-month categorization and spending
+```
+
+It missed a few things, so I gave it corrections for them a couple of times, and it captured everything perfectly in the design document. Voila!
+
+I had heard that it's almost always a good idea to ask for a plan before executing tasks, and I wanted to be able to track the project, so I decided to try out a project management tool and integrate it with Cursor.
+
+Linear caught my eye. It offered a free plan, and there was a Cursor plugin for it. I simply installed the plugin, signed up in the website, and it was pretty much good to go from there.
+
+I asked Cursor to create issues in Linear from the plan, including the dependency chain.
+
+It worked pretty flawlessly! It created 8 stories from the plan.
+
+After verifying the issues got created in Linear, I simply asked to implement them, respecting the dependency chain and spawning subagents for parallel works.
+
+It spawned a bunch of subagents, but this was the part I saw it struggle a bit.
+
+Firstly, the subagents kept asking me permission to do something, and that process ended up being endlessly clicking "Allow" button. That's somewhat understandable, it would be risky to run linux commands on its own.
+
+But also, it was only after clicking "Allow" numerous times that I realized that the two of the subagents were stepping on each other's toe. They were working on the same file and kept having conflicts.
+
+So I let the first subagent to complete its task first, and then let the second subagent run its thing (which was just clicking "Allow" button a few times), and they completed fine after a few clicks.
+
+After allowing it to do things some dozens of times more, it reported everything is complete.
+
+The result? Pretty impressive! It captured the requirements almost perfectly with a few misses, and created a slick design. There were some bugs too, some of which were pretty major. For example, it forgot to transform xlsx files to csv files entirely.
+
+I did absolutely zero coding for this. I never even read any code that the agent wrote. It did take full 2 hours, mostly due to having to allow the agent to run things.
+
+Next steps are to polish the UX and instruct the agent to prepare the project for deploying to vercel.
