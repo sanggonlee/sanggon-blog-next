@@ -4,6 +4,17 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: "Project Hail Mary (2023)",
+    date: '2026.04',
+    poster:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAI0TevBqhU2JRAEZlcBnw7zTjBVK2HOEzzA&s',
+    rating: 4,
+    text: `
+      오랜만에 영화관에서 본 영화였고 아주 재밌게 봤다. 보면서 꽤 많이 울었다.
+      비슷한 점이 많아서인지 자꾸 <Arrival>과 비교하면서 보게 되었는데 <Arrival>의 신중한 설정과는 대비되는 면이 커서 애꿎게도 상대적으로 격이 떨어지는 느낌이긴 했다.
+    `,
+  },
+  {
     title: "Leave the World Behind (2023)",
     date: '2025.12',
     poster:
