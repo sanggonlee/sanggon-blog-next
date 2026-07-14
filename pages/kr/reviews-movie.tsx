@@ -4,7 +4,18 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
-    title: "Project Hail Mary (2023)",
+    title: "Disclosure Day (2026)",
+    date: '2026.06',
+    poster:
+      'https://m.media-amazon.com/images/M/MV5BMTgwNDI1ZjctYWNmMS00MTJhLTg1ZWItMzI1Yjk5NjZkYWFkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg',
+    rating: 3.5,
+    text: `
+      재밌게 봤다. 스티븐 스필버그라고 하면 메시지에는 별로 비중을 안 두는 감독이라고 생각했는데 이번 영화는 확실히 메시지에 무게가 많이 실린 느낌이다.
+      진실이 중요한 사람들에게는 방송을 하는 장면이 강한 감정을 불러일으켰으리라고 생각되고 나 또한 그랬다.
+    `,
+  },
+  {
+    title: "Project Hail Mary (2026)",
     date: '2026.04',
     poster:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAI0TevBqhU2JRAEZlcBnw7zTjBVK2HOEzzA&s',
