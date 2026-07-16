@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 import StarRating from './StarRating';
 import { byDescendingDate } from '../lib/utils';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons'
+import '@fortawesome/fontawesome-svg-core/styles.css'
 
 type ReviewData = {
   title: string;
@@ -16,6 +19,8 @@ type ReviewData = {
 type Props = {
   reviews: ReviewData[];
 };
+
+const quoteIconStyle = { height: '0.5rem', marginBottom: '0.5rem' };
 
 export default function ReviewList({ reviews }: Props) {
   return (
@@ -62,8 +67,12 @@ function ReviewItem({
           {text.split('\n').map(((t, i) => (
             <Line key={i}>{t}</Line>
           )))}
-          {(quotes || []).map(((q, i) => (
-            <Quote key={i}>{q}</Quote>
+          {(quotes || []).filter(Boolean).map(((q, i) => (
+            <QuoteWrapper key={i}>
+              <FontAwesomeIcon icon={faQuoteLeft} style={quoteIconStyle} />
+              <Quote key={i}>{q}</Quote>
+              <FontAwesomeIcon icon={faQuoteRight} style={quoteIconStyle} />
+            </QuoteWrapper>
           )))}
         </Text>
       </div>
@@ -101,10 +110,14 @@ const Line = styled.p`
   margin-block-end: 0rem;
 `;
 
-const Quote = styled.p`
+const QuoteWrapper = styled.div`
   margin-block-start: 1rem;
   margin-block-end: 1rem;
   font-size: 0.9rem;
   font-style: italic;
   color: darkgrey;
+`;
+
+const Quote = styled.p`
+  display: inline;
 `;
