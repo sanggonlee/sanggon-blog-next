@@ -4,6 +4,18 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: "The Odyssey (2026)",
+    date: '2026.08',
+    poster:
+      'https://upload.wikimedia.org/wikipedia/en/9/90/The_Odyssey_%282026_film%29_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original',
+    rating: 4,
+    text: `
+      재밌었고, 감동적이었고, 깊었다. 원작의 여러 부분을 어떻게 구현했는지 보는 재미도 쏠쏠했지만 찾아보니 각색을 더러 한 것이었다는 것을 알게 됐다.
+      더 현실적이고 더 현대적인 해석이 꽤나 세련되고 마음에 들었다.
+      몰입도는 물론 최고였고, 나무랄 데 없는 작품이었다.
+    `,
+  },
+  {
     title: "Disclosure Day (2026)",
     date: '2026.06',
     poster:
