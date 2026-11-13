@@ -4,6 +4,19 @@ import { krNavigationLinks } from '../../lib/navigation';
 
 const reviews = [
   {
+    title: "가능한 사랑 (2026)",
+    date: '2026.11',
+    poster:
+      'https://i.namu.wiki/i/71QRtVQ58KmwvBHMozgHze363zU4lgGfuOrEZxDMM2vvgZ4yHHpU1ibfwGQaP5apZRIbr4BSz561nxmvG1xhEg.webp',
+    rating: 4,
+    text: `
+      내게는 난해하게 여겨지는 부분들도 있었지만 계속 곱씹게 만들었던 작품이었다.
+      표면적으로 내세우는 사회문제도 있지만 그보다 더 미묘한, 좁히려고 해도 좁혀지지 않는 계층 사이의 간극은 보는 이로 하여금 불편함을 자아낸다.
+      주요인물 네 명의 심리와 욕망, 상처가 다층적으로 배열되어 있어 입체적인 경험을 주었다.
+      아주 몰입해서 재밌게 봤다.
+    `,
+  },
+  {
     title: "The Odyssey (2026)",
     date: '2026.08',
     poster:
